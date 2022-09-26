@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: muralikrishnan.ml
+Token: d87c45d6afb3b765b3cc457f7db48d60707f65d92c5a0ec92e498e6e3d684324
