@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       {/* Mobile Navbar */}
-      <nav className="md:hidden sticky z-10 flex items-center justify-between p-5 bg-[#9d4edd] text-white">
+      <nav className="md:hidden sticky top-0 z-10 flex items-center justify-between p-4 bg-[#9d4edd] text-white">
         <h1 className="text-2xl">Murali Krishnan</h1>
         {!toggle ? (
           <HiMenu onClick={toggleHandler} className="w-8 h-8 cursor-pointer" />
@@ -69,13 +69,13 @@ const Navbar = () => {
       </nav>
 
       {/* laptop, Desktop Navbar */}
-      <nav className="hidden md:block bg-[#9d4edd] text-white p-5">
+      <nav className="hidden md:block sticky top-0 bg-[#9d4edd] text-white p-4">
         <div className="flex items-center justify-between max-w-[1200px] mx-auto">
-          <h1 className="text-xl lg:text-3xl font-semibold cursor-pointer hover:animate-pulse">
+          <h1 className="text-lg lg:text-3xl font-semibold cursor-pointer hover:animate-pulse">
             Murali Krishnan
           </h1>
 
-          <ul className="flex items-center justify-between gap-8 lg:text-lg font-semibold tracking-wider">
+          <ul className="flex items-center justify-between gap-8 lg:text-lg tracking-wider">
             <li className="hover:transition-all hover:border-b-[2px] hover:border-b-[#E0AAFF] cursor-pointer">
               <a href="#home">Home</a>
             </li>
@@ -93,7 +93,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <button className="lg:text-lg font-semibold bg-[#240046] px-5 py-4 lg:py-4 lg:px-12 rounded-xl hover:bg-white hover:text-[#9d4edd] hover:scale-110 transition-all duration-500 ease-in">
+          <button className="lg:text-lg  bg-[#240046] px-5 py-4 lg:py-4 lg:px-12 rounded-xl hover:bg-white hover:text-[#9d4edd] hover:scale-110 transition-all duration-500 ease-in">
             Let's Connect
           </button>
         </div>
