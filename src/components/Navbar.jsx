@@ -11,55 +11,56 @@ const Navbar = () => {
   return (
     <>
       {/* Mobile Navbar */}
-      <nav className="md:hidden sticky top-0 z-10 flex items-center justify-between p-4 bg-[#9d4edd] text-white">
-        <h1 className="text-2xl">Murali Krishnan</h1>
+      <nav className="lg:hidden sticky top-0 z-10 flex items-center justify-between p-4 bg-white text-primary">
+        <h1 className="text-2xl">MK</h1>
+
         {!toggle ? (
           <HiMenu onClick={toggleHandler} className="w-8 h-8 cursor-pointer" />
         ) : (
-          <div className="fixed top-0 left-0 w-screen h-screen bg-[#9d4edd] text-secondary flex flex-col justify-center ">
+          <div className="fixed top-0 left-0 w-screen h-screen bg-white text-secondary flex flex-col justify-center">
             <HiX
               onClick={toggleHandler}
-              className="absolute top-4 right-3 w-8 h-8 cursor-pointer text-white"
+              className="absolute top-4 right-4 w-8 h-8 cursor-pointer text-[#7050ef]"
             />
 
-            <ul className="flex flex-col items-center justify-center gap-16 font-semibold">
+            <ul className="flex flex-col items-center justify-center gap-16 font-semibold uppercase">
               <li
                 onClick={toggleHandler}
-                className="hover:border-b-[2px] hover:border-b-[#E0AAFF] transition-all ease-in"
+                className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
               >
-                <a href="#home" className="text-xl tracking-wide">
+                <a href="#home" className="text-lg tracking-wide">
                   Home
                 </a>
               </li>
               <li
                 onClick={toggleHandler}
-                className="hover:border-b-[2px] hover:border-b-[#E0AAFF] transition-all ease-in"
+                className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
               >
-                <a href="#about" className="text-xl tracking-wide">
+                <a href="#about" className="text-lg tracking-wide">
                   About
                 </a>
               </li>
               <li
                 onClick={toggleHandler}
-                className="hover:border-b-[2px] hover:border-b-[#E0AAFF] transition-all ease-in"
+                className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
               >
-                <a href="#portfolio" className="text-xl tracking-wide">
+                <a href="#portfolio" className="text-lg tracking-wide">
                   Portfolio
                 </a>
               </li>
               <li
                 onClick={toggleHandler}
-                className="hover:border-b-[2px] hover:border-b-[#E0AAFF] transition-all ease-in"
+                className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
               >
-                <a href="#contact" className="text-xl tracking-wide">
+                <a href="#contact" className="text-lg tracking-wide">
                   Contact
                 </a>
               </li>
               <li
                 onClick={toggleHandler}
-                className="hover:border-b-[2px] hover:border-b-[#E0AAFF] transition-all ease-in"
+                className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
               >
-                <a href="#blogs" className="text-xl tracking-wide">
+                <a href="#blogs" className="text-lg tracking-wide">
                   Blogs
                 </a>
               </li>
@@ -69,33 +70,36 @@ const Navbar = () => {
       </nav>
 
       {/* laptop, Desktop Navbar */}
-      <nav className="hidden md:block sticky top-0 bg-[#9d4edd] text-white p-4">
-        <div className="flex items-center justify-between max-w-[1200px] mx-auto">
-          <h1 className="text-lg lg:text-3xl font-semibold cursor-pointer hover:animate-pulse">
+      <nav className="hidden lg:block sticky top-0 bg-white text-primary">
+        <div className="max-w-[1158px] mx-auto flex items-center justify-between py-9">
+          <h1 className="text-2xl uppercase font-semibold cursor-pointer hover:animate-pulse">
             Murali Krishnan
           </h1>
 
-          <ul className="flex items-center justify-between gap-8 lg:text-lg tracking-wider">
-            <li className="hover:transition-all hover:border-b-[2px] hover:border-b-[#E0AAFF] cursor-pointer">
+          <ul className="flex items-center gap-8 uppercase tracking-wider text-[.9rem] font-medium">
+            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer hover:border-b-black">
               <a href="#home">Home</a>
             </li>
-            <li className="hover:transition-all hover:border-b-[2px] hover:border-b-[#E0AAFF] cursor-pointer">
+            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer hover:border-b-black">
               <a href="#about">About</a>
             </li>
-            <li className="hover:transition-all hover:border-b-[2px] hover:border-b-[#E0AAFF] cursor-pointer">
+            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer hover:border-b-black">
               <a href="#portfolio">Portfolio</a>
             </li>
-            <li className="hover:transition-all hover:border-b-[2px] hover:border-b-[#E0AAFF] cursor-pointer">
-              <a href="#contact">Contact</a>
+            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer hover:border-b-black">
+              <a href="#resume">Resume</a>
             </li>
-            <li className="hover:transition-all hover:border-b-[2px] hover:border-b-[#E0AAFF] cursor-pointer">
+            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer hover:border-b-black">
               <a href="#blogs">Blogs</a>
             </li>
+            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer hover:border-b-black">
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
-
-          <button className="lg:text-lg  bg-[#240046] px-5 py-4 lg:py-4 lg:px-12 rounded-xl hover:bg-white hover:text-[#9d4edd] hover:scale-110 transition-all duration-500 ease-in">
-            Let's Connect
-          </button>
+          {/* 
+          <button className="uppercase tracking-wider text-lg py-2 px-10 rounded-xl text-primary font-semibold border-2 border-highlights hover:scale-110 transition-all duration-500 ease-in">
+            Contact
+          </button> */}
         </div>
       </nav>
     </>
