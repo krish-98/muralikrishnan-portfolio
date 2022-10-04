@@ -70,36 +70,32 @@ const Navbar = () => {
       </nav>
 
       {/* laptop, Desktop Navbar */}
-      <nav className="hidden lg:block sticky top-0 bg-white text-primary">
+      <nav className="hidden lg:block sticky top-0 bg-white text-primary px-6">
         <div className="max-w-[1158px] mx-auto flex items-center justify-between py-9">
           <h1 className="text-2xl uppercase font-semibold cursor-pointer hover:animate-pulse">
             Murali Krishnan
           </h1>
 
           <ul className="flex items-center gap-8 uppercase tracking-wider text-[.9rem] font-medium">
-            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer hover:border-b-black">
+            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
               <a href="#home">Home</a>
             </li>
-            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer hover:border-b-black">
+            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
               <a href="#about">About</a>
             </li>
-            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer hover:border-b-black">
+            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
               <a href="#portfolio">Portfolio</a>
             </li>
-            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer hover:border-b-black">
+            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
               <a href="#resume">Resume</a>
             </li>
-            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer hover:border-b-black">
+            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
               <a href="#blogs">Blogs</a>
             </li>
-            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer hover:border-b-black">
+            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
               <a href="#contact">Contact</a>
             </li>
           </ul>
-          {/* 
-          <button className="uppercase tracking-wider text-lg py-2 px-10 rounded-xl text-primary font-semibold border-2 border-highlights hover:scale-110 transition-all duration-500 ease-in">
-            Contact
-          </button> */}
         </div>
       </nav>
     </>
