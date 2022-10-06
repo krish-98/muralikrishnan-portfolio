@@ -2,6 +2,7 @@ import React from "react"
 import Dev from "../assets/dev.svg"
 import Profile from "../assets/programming.svg"
 import { BiLinkExternal } from "react-icons/bi"
+import Skills from "./Skills"
 
 const Main = () => {
   return (
@@ -42,7 +43,7 @@ const Main = () => {
         {/* About Me Section */}
         <section
           id="about"
-          className="h-screen flex flex-col justify-center items-center gap-6"
+          className="flex flex-col justify-center items-center gap-6"
         >
           <h2 className="text-3xl font-semibold tracking-wide uppercase my-4 lg:text-4xl">
             About <span className="text-primary">Me </span>
@@ -58,7 +59,7 @@ const Main = () => {
             </div>
 
             <div className="w-full md:ml-4 lg:ml-0 self-center">
-              <p className="text-sm tracking-wide leading-6 font-semibold mb-6 lg:text-base lg:leading-7 lg:text-left">
+              <p className="indent-8 text-sm tracking-wide leading-6 font-semibold mb-6 lg:text-base lg:leading-7 lg:text-left">
                 Hello World, I am Murali Krishnan. I belong to Madurai, India. I
                 have a Bachelor's Degree in Computer Science & Engg. But,
                 learned everything on the Internet and still learning.
@@ -71,6 +72,8 @@ const Main = () => {
             </div>
           </div>
         </section>
+
+        <Skills />
       </div>
     </div>
   )

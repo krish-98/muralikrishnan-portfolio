@@ -23,12 +23,12 @@ const Navbar = () => {
               className="absolute top-4 right-4 w-8 h-8 cursor-pointer text-[#7050ef]"
             />
 
-            <ul className="flex flex-col items-center justify-center gap-16 font-semibold uppercase">
+            <ul className="flex flex-col items-center justify-center gap-9 font-semibold uppercase">
               <li
                 onClick={toggleHandler}
                 className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
               >
-                <a href="#home" className="text-lg tracking-wide">
+                <a href="#home" className="md:text-lg tracking-wide">
                   Home
                 </a>
               </li>
@@ -36,7 +36,7 @@ const Navbar = () => {
                 onClick={toggleHandler}
                 className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
               >
-                <a href="#about" className="text-lg tracking-wide">
+                <a href="#about" className="md:text-lg tracking-wide">
                   About
                 </a>
               </li>
@@ -44,7 +44,15 @@ const Navbar = () => {
                 onClick={toggleHandler}
                 className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
               >
-                <a href="#portfolio" className="text-lg tracking-wide">
+                <a href="#skills" className="md:text-lg tracking-wide">
+                  Skills
+                </a>
+              </li>
+              <li
+                onClick={toggleHandler}
+                className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
+              >
+                <a href="#portfolio" className="md:text-lg tracking-wide">
                   Portfolio
                 </a>
               </li>
@@ -52,16 +60,16 @@ const Navbar = () => {
                 onClick={toggleHandler}
                 className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
               >
-                <a href="#contact" className="text-lg tracking-wide">
-                  Contact
+                <a href="#resume" className="md:text-lg tracking-wide">
+                  Resume
                 </a>
               </li>
               <li
                 onClick={toggleHandler}
                 className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
               >
-                <a href="#blogs" className="text-lg tracking-wide">
-                  Blogs
+                <a href="#contact" className="md:text-lg tracking-wide">
+                  Contact
                 </a>
               </li>
             </ul>
@@ -84,13 +92,13 @@ const Navbar = () => {
               <a href="#about">About</a>
             </li>
             <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
+              <a href="#skills">Skills</a>
+            </li>
+            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
               <a href="#portfolio">Portfolio</a>
             </li>
             <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
               <a href="#resume">Resume</a>
-            </li>
-            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
-              <a href="#blogs">Blogs</a>
             </li>
             <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
               <a href="#contact">Contact</a>
