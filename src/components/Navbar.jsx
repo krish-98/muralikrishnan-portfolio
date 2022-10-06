@@ -78,7 +78,7 @@ const Navbar = () => {
       </nav>
 
       {/* laptop, Desktop Navbar */}
-      <nav className="hidden lg:block sticky top-0 bg-white text-primary px-6">
+      <nav className="hidden lg:block sticky top-0 z-10 bg-white text-primary px-6">
         <div className="max-w-[1158px] mx-auto flex items-center justify-between py-9">
           <h1 className="text-2xl uppercase font-semibold cursor-pointer hover:animate-pulse">
             Murali Krishnan
