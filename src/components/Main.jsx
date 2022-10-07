@@ -3,6 +3,7 @@ import Dev from "../assets/dev.svg"
 import Profile from "../assets/programming.svg"
 import { BiLinkExternal } from "react-icons/bi"
 import Skills from "./Skills"
+import Portfolio from "./Portfolio"
 
 const Main = () => {
   return (
@@ -74,6 +75,8 @@ const Main = () => {
         </section>
 
         <Skills />
+
+        <Portfolio />
       </div>
     </div>
   )
