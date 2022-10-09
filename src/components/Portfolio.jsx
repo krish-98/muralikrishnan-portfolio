@@ -18,7 +18,7 @@ const Portfolio = () => {
       </h2>
 
       {/* Project - 1 */}
-      <div className="flex flex-col gap-4 my-8 lg:flex-row">
+      <div className="flex flex-col gap-4 my-12 p-4 shadow-lg rounded-md md:py-6 lg:flex-row hover:scale-105 transition-all duration-500 ease-in-out">
         {/* Project sceernshot */}
         <img className="rounded-lg lg:w-[50%]" src={Chat} alt="project cover" />
 
@@ -73,7 +73,7 @@ const Portfolio = () => {
       </div>
 
       {/* Project - 2 */}
-      <div className="flex flex-col gap-4 my-8 lg:flex-row">
+      <div className="flex flex-col gap-4 my-12 p-4 shadow-lg rounded-md md:py-6 lg:flex-row hover:scale-105 transition-all duration-500 ease-in-out">
         {/* Project sceernshot */}
         <img className="rounded-lg lg:w-[50%]" src={Chat} alt="project cover" />
 
@@ -124,7 +124,7 @@ const Portfolio = () => {
       </div>
 
       {/* Project - 3 */}
-      <div className="flex flex-col gap-4 my-8 lg:flex-row">
+      <div className="flex flex-col gap-4 my-12 p-4 shadow-lg rounded-md md:py-6 lg:flex-row hover:scale-105 transition-all duration-500 ease-in-out">
         {/* Project sceernshot */}
         <img className="rounded-lg lg:w-[50%]" src={Chat} alt="project cover" />
 
