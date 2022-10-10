@@ -4,6 +4,7 @@ import Profile from "../assets/programming.svg"
 import { BiLinkExternal } from "react-icons/bi"
 import Skills from "./Skills"
 import Portfolio from "./Portfolio"
+import Contact from "./Contact"
 
 const Main = () => {
   return (
@@ -30,8 +31,9 @@ const Main = () => {
               technologies.
             </p>
 
-            <button className="bg-primary text-white px-8 py-2 rounded-xl lg:py-4 lg:px-12 lg:mt-6 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500">
-              Resume
+            <button className="bg-primary text-white px-8 py-2 tracking-wide rounded-xl lg:py-4 lg:mt-6 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500">
+              Download Resume
+              <BiLinkExternal className="inline-block ml-1 h-5 w-6" />
             </button>
           </div>
 
@@ -59,16 +61,15 @@ const Main = () => {
               />
             </div>
 
-            <div className="w-full md:ml-4 lg:ml-0 self-center">
-              <p className="indent-8 text-sm tracking-wide leading-6 font-semibold mb-6 lg:text-base lg:leading-7 lg:text-left">
+            <div className="flex flex-col items-center self-center lg:items-start">
+              <p className="text-sm text-center tracking-wide leading-6 font-semibold mb-6 lg:text-base lg:leading-7 lg:text-left">
                 Hello World, I am Murali Krishnan. I belong to Madurai, India. I
                 have a Bachelor's Degree in Computer Science & Engg. But,
                 learned everything on the Internet and still learning.
               </p>
 
-              <button className="bg-primary text-white px-8 py-4 rounded-xl lg:py-5 lg:px-8 lg:mt-6 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500">
-                Downdload Resume
-                <BiLinkExternal className="inline-block ml-1 h-5 w-6" />
+              <button className=" bg-primary text-white px-8 py-4 rounded-xl tracking-wide  lg:px-8 lg:mt-4 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500">
+                Contact Me
               </button>
             </div>
           </div>
@@ -77,6 +78,8 @@ const Main = () => {
         <Skills />
 
         <Portfolio />
+
+        <Contact />
       </div>
     </div>
   )
