@@ -5,7 +5,6 @@ import { BiLinkExternal } from "react-icons/bi"
 import Skills from "./Skills"
 import Portfolio from "./Portfolio"
 import Contact from "./Contact"
-
 const Main = () => {
   return (
     <div className="px-5 text-lightBlack">
