@@ -5,6 +5,11 @@ import { BiLinkExternal } from "react-icons/bi"
 import Skills from "./Skills"
 import Portfolio from "./Portfolio"
 import Contact from "./Contact"
+
+import { AiOutlineMail } from "react-icons/ai"
+import { FiTwitter } from "react-icons/fi"
+import { BsLinkedin, BsGithub } from "react-icons/bs"
+
 const Main = () => {
   return (
     <div className="px-5 text-lightBlack">
@@ -34,11 +39,47 @@ const Main = () => {
               href="https://drive.google.com/file/d/1lAsPZGTKbJp-dTAYh7EMJltY4Owym1sn/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
-              className="bg-primary text-white px-8 py-2 tracking-wide rounded-xl lg:py-4 lg:mt-6 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500"
+              className="bg-primary text-white px-8 py-4 tracking-wide rounded-xl lg:mt-6 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500"
             >
               Download Resume
               <BiLinkExternal className="inline-block ml-1 h-5 w-6" />
             </a>
+
+            {/* Social Links */}
+            <div className="flex gap-6 my-1 lg:ml-4 ">
+              <a
+                className="hover:text-primary transition-all ease-in-out duration-300 "
+                href="https://www.linkedin.com/in/muralikrishnan98/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BsLinkedin className="w-6 h-5 lg:h-7 lg:w-8" />
+              </a>
+              <a
+                className="hover:text-primary transition-all ease-in-out duration-300 "
+                href="https://twitter.com/muralikrishn_an"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FiTwitter className="w-6 h-5 lg:h-7 lg:w-8" />
+              </a>
+              <a
+                className="hover:text-primary transition-all ease-in-out duration-300 "
+                href="https://github.com/krish-98"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BsGithub className="w-6 h-5 lg:h-7 lg:w-8" />
+              </a>
+              <a
+                className="hover:text-primary transition-all ease-in-out duration-300 "
+                href="mailto:muralikrishnanm98@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiOutlineMail className="w-6 h-5 lg:h-7 lg:w-8" />
+              </a>
+            </div>
           </div>
 
           {/* Hero banner image */}
@@ -67,8 +108,10 @@ const Main = () => {
 
             <div className="flex flex-col items-center self-center lg:items-start">
               <p className="text-sm text-center tracking-wide leading-6 font-semibold mb-6 lg:text-base lg:leading-7 lg:text-left">
-                Hello World, I am Murali Krishnan. I belong to Madurai, India. I
-                have a Bachelor's Degree in Computer Science & Engg. But,
+                Hello World,{" "}
+                <span className="text-primary">I'm Murali Krishnan</span>. I
+                belong to <span className="text-primary">Madurai, India</span>.
+                I have a Bachelor's Degree in Computer Science & Engg. But,
                 learned everything on the Internet and still learning.
               </p>
 

@@ -32,7 +32,7 @@ const Portfolio = () => {
           </p>
 
           {/* Tech stack */}
-          <div className="flex items-center gap-2 mb-2">
+          <div className="flex items-center justify-center gap-2 mb-2">
             <span>
               <SiTailwindcss className="w-12 h-8 text-[#38bdf8] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
             </span>
@@ -93,7 +93,7 @@ const Portfolio = () => {
           </p>
 
           {/* Tech stack */}
-          <div className="flex items-center gap-2 mb-2">
+          <div className="flex items-center justify-center gap-2 mb-2">
             <span>
               <SiTailwindcss className="w-12 h-8 text-[#38bdf8] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
             </span>
@@ -148,7 +148,7 @@ const Portfolio = () => {
           </p>
 
           {/* Tech stack */}
-          <div className="flex items-center gap-2 mb-2">
+          <div className="flex items-center justify-center gap-2 mb-2">
             <span>
               <SiTailwindcss className="w-12 h-8 text-[#38bdf8] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
             </span>

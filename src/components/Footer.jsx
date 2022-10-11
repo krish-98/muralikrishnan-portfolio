@@ -13,6 +13,7 @@ const Footer = () => {
 
       <div className="flex gap-8 my-4">
         <a
+          className="hover:text-primary transition-all ease-in-out duration-300 "
           href="https://www.linkedin.com/in/muralikrishnan98/"
           target="_blank"
           rel="noreferrer"
@@ -20,16 +21,23 @@ const Footer = () => {
           <BsLinkedin className="w-6 h-5 lg:h-7 lg:w-8" />
         </a>
         <a
+          className="hover:text-primary transition-all ease-in-out duration-300 "
           href="https://twitter.com/muralikrishn_an"
           target="_blank"
           rel="noreferrer"
         >
           <FiTwitter className="w-6 h-5 lg:h-7 lg:w-8" />
         </a>
-        <a href="https://github.com/krish-98" target="_blank" rel="noreferrer">
+        <a
+          className="hover:text-primary transition-all ease-in-out duration-300 "
+          href="https://github.com/krish-98"
+          target="_blank"
+          rel="noreferrer"
+        >
           <BsGithub className="w-6 h-5 lg:h-7 lg:w-8" />
         </a>
         <a
+          className="hover:text-primary transition-all ease-in-out duration-300 "
           href="mailto:muralikrishnanm98@gmail.com"
           target="_blank"
           rel="noreferrer"
