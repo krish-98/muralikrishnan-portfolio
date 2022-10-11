@@ -30,10 +30,15 @@ const Main = () => {
               technologies.
             </p>
 
-            <button className="bg-primary text-white px-8 py-2 tracking-wide rounded-xl lg:py-4 lg:mt-6 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500">
+            <a
+              href="https://drive.google.com/file/d/1lAsPZGTKbJp-dTAYh7EMJltY4Owym1sn/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              className="bg-primary text-white px-8 py-2 tracking-wide rounded-xl lg:py-4 lg:mt-6 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500"
+            >
               Download Resume
               <BiLinkExternal className="inline-block ml-1 h-5 w-6" />
-            </button>
+            </a>
           </div>
 
           {/* Hero banner image */}
@@ -67,9 +72,12 @@ const Main = () => {
                 learned everything on the Internet and still learning.
               </p>
 
-              <button className=" bg-primary text-white px-8 py-4 rounded-xl tracking-wide  lg:px-8 lg:mt-4 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500">
+              <a
+                href="#contact"
+                className=" bg-primary text-white px-8 py-4 rounded-xl tracking-wide  lg:px-8 lg:mt-4 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500"
+              >
                 Contact Me
-              </button>
+              </a>
             </div>
           </div>
         </section>

@@ -60,7 +60,12 @@ const Navbar = () => {
                 onClick={toggleHandler}
                 className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
               >
-                <a href="#resume" className="md:text-lg tracking-wide">
+                <a
+                  href="https://drive.google.com/file/d/1lAsPZGTKbJp-dTAYh7EMJltY4Owym1sn/view?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="md:text-lg tracking-wide"
+                >
                   Resume
                 </a>
               </li>
@@ -98,7 +103,13 @@ const Navbar = () => {
               <a href="#portfolio">Portfolio</a>
             </li>
             <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
-              <a href="#resume">Resume</a>
+              <a
+                href="https://drive.google.com/file/d/1lAsPZGTKbJp-dTAYh7EMJltY4Owym1sn/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Resume
+              </a>
             </li>
             <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
               <a href="#contact">Contact</a>

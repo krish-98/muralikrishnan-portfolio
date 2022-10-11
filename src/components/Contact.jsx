@@ -7,9 +7,6 @@ import { RiMailSendLine } from "react-icons/ri"
 
 const Contact = () => {
   const formRef = useRef()
-  // const nameRef = useRef()
-  // const emailRef = useRef()
-  // const msgRef = useRef()
 
   const handleForm = (e) => {
     e.preventDefault()
@@ -33,7 +30,7 @@ const Contact = () => {
   }
 
   return (
-    <div id="contact" className="flex flex-col items-center my-28">
+    <div id="contact" className="flex flex-col items-center mt-28 mb-16">
       <h2 className="text-3xl font-semibold tracking-wide uppercase my-4 lg:text-4xl">
         Contact
       </h2>
