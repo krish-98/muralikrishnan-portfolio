@@ -55,15 +55,19 @@ const Portfolio = () => {
 
           <div className="my-4">
             <a
-              className="text-sm bg-white px-4 py-3 text-primary border border-primary rounded-lg mr-4 md:px-8 md:py-5"
-              href="#"
+              className="text-sm bg-white px-4 py-3 text-primary border border-primary rounded-lg mr-4 md:px-8 md:py-5 hover:shadow-md hover:shadow-primary transition ease-in-out duration-500"
+              href="https://github.com/krish-98/city"
+              target="_blank"
+              rel="noreferrer"
             >
               Source Code
               <SiGithub className="inline ml-2 w-4 h-4" />
             </a>
             <a
               className="text-sm bg-primary px-4 py-3 text-white rounded-lg md:px-8 md:py-5 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500"
-              href="#"
+              href="https://city-pi.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
             >
               Live Project
               <BiLinkExternal className="inline ml-2 w-4 h-4" />
@@ -106,8 +110,10 @@ const Portfolio = () => {
 
           <div className="my-4">
             <a
-              className="text-sm bg-white px-4 py-3 text-primary border border-primary rounded-lg mr-4 md:px-8 md:py-5"
-              href="#"
+              className="text-sm bg-white px-4 py-3 text-primary border border-primary rounded-lg mr-4 md:px-8 md:py-5 hover:shadow-md hover:shadow-primary transition ease-in-out duration-500"
+              href="https://github.com/krish-98/Chat-Nest"
+              target="_blank"
+              rel="noreferrer"
             >
               Source Code
               <SiGithub className="inline ml-2 w-4 h-4" />
@@ -115,6 +121,8 @@ const Portfolio = () => {
             <a
               className="text-sm bg-primary px-4 py-3 text-white rounded-lg md:px-8 md:py-5 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500"
               href="#"
+              target="_blank"
+              rel="noreferrer"
             >
               Live Project
               <BiLinkExternal className="inline ml-2 w-4 h-4" />
@@ -160,15 +168,19 @@ const Portfolio = () => {
 
           <div className="my-4">
             <a
-              className="text-sm bg-white px-4 py-3 text-primary border border-primary rounded-lg mr-4 md:px-8 md:py-5"
-              href="#"
+              className="text-sm bg-white px-4 py-3 text-primary border border-primary rounded-lg mr-4 md:px-8 md:py-5 hover:shadow-md hover:shadow-primary transition ease-in-out duration-500"
+              href="https://github.com/krish-98/audiophile"
+              target="_blank"
+              rel="noreferrer"
             >
               Source Code
               <SiGithub className="inline ml-2 w-4 h-4" />
             </a>
             <a
               className="text-sm bg-primary px-4 py-3 text-white rounded-lg md:px-8 md:py-5 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500"
-              href="#"
+              href="https://audiophile-web.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
             >
               Live Project
               <BiLinkExternal className="inline ml-2 w-4 h-4" />
