@@ -31,7 +31,7 @@ const Main = () => {
 
             <p className="text-sm leading-6 font-semibold tracking-wide md:w-[70%] lg:text-base">
               I Design and Develop website & web apps. From blank HTML DOM page
-              to fully functional app using modern-day JavaScript 🖤
+              to fully functional web app using modern-day JavaScript 🖤
               technologies.
             </p>
 
@@ -108,10 +108,10 @@ const Main = () => {
 
             <div className="flex flex-col items-center self-center lg:items-start">
               <p className="text-sm text-center tracking-wide leading-6 font-semibold mb-6 lg:text-base lg:leading-7 lg:text-left">
-                Hello World,{" "}
+                Hello World!{" "}
                 <span className="text-primary">I'm Murali Krishnan</span>. I
                 belong to <span className="text-primary">Madurai, India</span>.
-                I have a Bachelor's Degree in Computer Science & Engg. But,
+                I have a Bachelor's Degree in Computer Science & Engg, yet I
                 learned everything on the Internet and still learning.
               </p>
 

@@ -1,5 +1,6 @@
 import React from "react"
 import Chat from "../assets/chat.jpg"
+import City from "../assets/city.png"
 import { BiLinkExternal } from "react-icons/bi"
 import { FaReact } from "react-icons/fa"
 import {
@@ -20,7 +21,7 @@ const Portfolio = () => {
       {/* Project - 1 */}
       <div className="flex flex-col gap-4 my-12 p-4 shadow-lg rounded-md md:py-6 lg:flex-row hover:scale-105 transition-all duration-500 ease-in-out">
         {/* Project sceernshot */}
-        <img className="rounded-lg lg:w-[50%]" src={Chat} alt="project cover" />
+        <img className="rounded-lg lg:w-[50%]" src={City} alt="project cover" />
 
         {/* Project desc */}
         <div className="flex flex-col gap-3 md:gap-5 md:items-center lg:self-center">
@@ -28,7 +29,8 @@ const Portfolio = () => {
           <p className="text-[.9rem] md:text-base font-medium md:w-[90%] md:mx-auto md:text-center">
             An online food ordering application built using Tailwind CSS,
             React.js for UI Rendering along with Redux-Toolkit for state
-            management and Firebase for user authentication and cloud-storage.
+            management and Firebase for user authentication, storage and
+            database.
           </p>
 
           {/* Tech stack */}
