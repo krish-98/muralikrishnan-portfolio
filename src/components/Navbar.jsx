@@ -12,7 +12,9 @@ const Navbar = () => {
     <>
       {/* Mobile Navbar */}
       <nav className="lg:hidden sticky top-0 z-10 flex items-center justify-between p-4 bg-white text-primary">
-        <h1 className="text-2xl">MK</h1>
+        <a className="text-2xl" href="#home">
+          MK
+        </a>
 
         {!toggle ? (
           <HiMenu onClick={toggleHandler} className="w-8 h-8 cursor-pointer" />
@@ -85,9 +87,12 @@ const Navbar = () => {
       {/* laptop, Desktop Navbar */}
       <nav className="hidden lg:block sticky top-0 z-10 bg-white text-primary py-7 px-6">
         <div className="max-w-[1158px] mx-auto flex items-center justify-between">
-          <h1 className="text-2xl uppercase font-semibold cursor-pointer hover:animate-pulse">
+          <a
+            href="#home"
+            className="text-2xl uppercase font-semibold cursor-pointer hover:animate-pulse"
+          >
             Murali Krishnan
-          </h1>
+          </a>
 
           <ul className="flex items-center gap-8 uppercase tracking-wider text-[.9rem] font-medium">
             <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
