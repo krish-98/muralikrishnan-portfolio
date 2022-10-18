@@ -1,6 +1,7 @@
 import React from "react"
 import Chat from "../assets/chat.jpg"
 import City from "../assets/city.png"
+import Audiophile from "../assets/audiophile.png"
 import { BiLinkExternal } from "react-icons/bi"
 import { FaReact } from "react-icons/fa"
 import {
@@ -91,7 +92,7 @@ const Portfolio = () => {
           <p className="text-[.9rem] md:text-base font-medium md:w-[90%] md:mx-auto md:text-center">
             A Real-time chat application built using React.js for UI & logic,
             ContextAPI for sharing props and Firebase for auth, storage and
-            server logic.
+            firestore.
           </p>
 
           {/* Tech stack */}
@@ -136,7 +137,11 @@ const Portfolio = () => {
       {/* Project - 3 */}
       <div className="flex flex-col gap-4 my-12 p-4 shadow-lg rounded-md md:py-6 lg:flex-row hover:scale-105 transition-all duration-500 ease-in-out">
         {/* Project sceernshot */}
-        <img className="rounded-lg lg:w-[50%]" src={Chat} alt="project cover" />
+        <img
+          className="rounded-lg lg:w-[50%]"
+          src={Audiophile}
+          alt="project cover"
+        />
 
         {/* Project desc */}
         <div className="flex flex-col gap-3 md:gap-5 md:items-center lg:self-center">
