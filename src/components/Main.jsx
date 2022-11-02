@@ -36,7 +36,7 @@ const Main = () => {
             </p>
 
             <a
-              href="https://drive.google.com/file/d/1lAsPZGTKbJp-dTAYh7EMJltY4Owym1sn/view?usp=sharing"
+              href="https://drive.google.com/file/d/1iXRJyvDWdKS5OdqamquQdDvOTvd_QF7J/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="bg-primary text-white px-8 py-4 tracking-wide rounded-xl lg:mt-6 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500"
@@ -49,7 +49,7 @@ const Main = () => {
             <div className="flex gap-6 my-1 lg:ml-4 ">
               <a
                 className="hover:text-primary transition-all ease-in-out duration-300 "
-                href="https://www.linkedin.com/in/muralikrishnan98/"
+                href="https://www.linkedin.com/in/muralikrishnanm98/"
                 target="_blank"
                 rel="noreferrer"
               >

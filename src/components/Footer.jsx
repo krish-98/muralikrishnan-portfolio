@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="flex gap-8 my-4">
         <a
           className="hover:text-primary transition-all ease-in-out duration-300 "
-          href="https://www.linkedin.com/in/muralikrishnan98/"
+          href="https://www.linkedin.com/in/muralikrishnanm98/"
           target="_blank"
           rel="noreferrer"
         >
