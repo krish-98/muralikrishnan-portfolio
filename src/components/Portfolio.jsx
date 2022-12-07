@@ -1,6 +1,6 @@
 import React from "react"
-import Chat from "../assets/chat.jpg"
 import City from "../assets/city.png"
+import Musik from "../assets/my-musik.png"
 import Audiophile from "../assets/audiophile.png"
 import { BiLinkExternal } from "react-icons/bi"
 import { FaReact } from "react-icons/fa"
@@ -20,6 +20,63 @@ const Portfolio = () => {
       </h2>
 
       {/* Project - 1 */}
+      <div className="flex flex-col gap-4 my-12 p-4 shadow-lg rounded-md md:py-6 lg:flex-row hover:scale-105 transition-all duration-500 ease-in-out">
+        {/* Project sceernshot */}
+        <img
+          className="rounded-lg lg:w-[50%]"
+          src={Musik}
+          alt="project cover"
+        />
+
+        {/* Project desc */}
+        <div className="flex flex-col gap-3 md:gap-5 md:items-center lg:self-center">
+          <h3 className="text-xl font-semibold uppercase md:text-2xl">Musik</h3>
+          <p className="text-[.9rem] md:text-base font-medium md:w-[90%] md:mx-auto md:text-center">
+            Music streaming app using Shazamcore API built with React.js and
+            Redux-toolkit for managing statesand API data fetching using RTK
+            Query.
+          </p>
+
+          {/* Tech stack */}
+          <div className="flex items-center justify-center gap-2 mb-2">
+            <span>
+              <SiTailwindcss className="w-12 h-8 text-[#38bdf8] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
+            </span>
+            <span>
+              <SiJavascript className="w-12 h-8 text-[#f7e018] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
+            </span>
+            <span>
+              <FaReact className="w-12 h-8 text-[#61dbfb] flex scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
+            </span>
+            <span>
+              <SiFirebase className="w-12 h-8 text-[#ffcb2e] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
+            </span>
+          </div>
+
+          <div className="my-4">
+            <a
+              className="text-sm bg-white px-4 py-3 text-primary border border-primary rounded-lg mr-4 md:px-8 md:py-5 hover:shadow-md hover:shadow-primary transition ease-in-out duration-500"
+              href="https://github.com/krish-98/Musik"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Source Code
+              <SiGithub className="inline ml-2 w-4 h-4" />
+            </a>
+            <a
+              className="text-sm bg-primary px-4 py-3 text-white rounded-lg md:px-8 md:py-5 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500"
+              href="https://my-musik.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Project
+              <BiLinkExternal className="inline ml-2 w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Project - 2 */}
       <div className="flex flex-col gap-4 my-12 p-4 shadow-lg rounded-md md:py-6 lg:flex-row hover:scale-105 transition-all duration-500 ease-in-out">
         {/* Project sceernshot */}
         <img className="rounded-lg lg:w-[50%]" src={City} alt="project cover" />
@@ -69,61 +126,6 @@ const Portfolio = () => {
             <a
               className="text-sm bg-primary px-4 py-3 text-white rounded-lg md:px-8 md:py-5 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500"
               href="https://city-pi.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Live Project
-              <BiLinkExternal className="inline ml-2 w-4 h-4" />
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {/* Project - 2 */}
-      <div className="flex flex-col gap-4 my-12 p-4 shadow-lg rounded-md md:py-6 lg:flex-row hover:scale-105 transition-all duration-500 ease-in-out">
-        {/* Project sceernshot */}
-        <img className="rounded-lg lg:w-[50%]" src={Chat} alt="project cover" />
-
-        {/* Project desc */}
-        <div className="flex flex-col gap-3 md:gap-5 md:items-center lg:self-center">
-          <h3 className="text-xl font-semibold uppercase md:text-2xl">
-            Chat-Nest
-          </h3>
-          <p className="text-[.9rem] md:text-base font-medium md:w-[90%] md:mx-auto md:text-center">
-            A Real-time chat application built using React.js for UI & logic,
-            ContextAPI for sharing props and Firebase for auth, storage and
-            firestore.
-          </p>
-
-          {/* Tech stack */}
-          <div className="flex items-center justify-center gap-2 mb-2">
-            <span>
-              <SiTailwindcss className="w-12 h-8 text-[#38bdf8] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
-            </span>
-            <span>
-              <SiJavascript className="w-12 h-8 text-[#f7e018] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
-            </span>
-            <span>
-              <FaReact className="w-12 h-8 text-[#61dbfb] flex scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
-            </span>
-            <span>
-              <SiFirebase className="w-12 h-8 text-[#ffcb2e] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
-            </span>
-          </div>
-
-          <div className="my-4">
-            <a
-              className="text-sm bg-white px-4 py-3 text-primary border border-primary rounded-lg mr-4 md:px-8 md:py-5 hover:shadow-md hover:shadow-primary transition ease-in-out duration-500"
-              href="https://github.com/krish-98/Chat-Nest"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Source Code
-              <SiGithub className="inline ml-2 w-4 h-4" />
-            </a>
-            <a
-              className="text-sm bg-primary px-4 py-3 text-white rounded-lg md:px-8 md:py-5 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500"
-              href="#"
               target="_blank"
               rel="noreferrer"
             >
