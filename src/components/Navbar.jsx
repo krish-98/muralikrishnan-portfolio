@@ -1,17 +1,35 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { HiMenu, HiX } from "react-icons/hi"
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
+  const [show, setShow] = useState(false)
 
   const toggleHandler = () => {
     setToggle(!toggle)
   }
 
+  const transitionNavbar = () => {
+    window.scrollY > 100 ? setShow(true) : setShow(false)
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", transitionNavbar)
+    return () => {
+      window.removeEventListener("scroll", transitionNavbar)
+    }
+  }, [])
+
+  console.log(show)
+
   return (
     <>
       {/* Mobile Navbar */}
-      <nav className="lg:hidden sticky top-0 z-10 flex items-center justify-between p-4 bg-white text-primary">
+      <nav
+        className={`lg:hidden sticky top-0 z-10 flex items-center justify-between p-4 bg-white text-primary ${
+          show && "backdrop-blur-sm bg-transparent"
+        } transition-all duration-300`}
+      >
         <a className="text-2xl" href="#home">
           MK
         </a>
@@ -85,7 +103,11 @@ const Navbar = () => {
       </nav>
 
       {/* laptop, Desktop Navbar */}
-      <nav className="hidden lg:block sticky top-0 z-10 bg-white text-primary py-7 px-6">
+      <nav
+        className={`hidden lg:block sticky top-0 z-10 bg-white text-primary py-7 px-6 ${
+          show && "backdrop-blur-lg bg-transparent py-3"
+        } transition-all duration-300`}
+      >
         <div className="max-w-[1158px] mx-auto flex items-center justify-between">
           <a
             href="#home"
