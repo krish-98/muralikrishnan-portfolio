@@ -36,7 +36,7 @@ const Main = () => {
             </p>
 
             <a
-              href="https://drive.google.com/file/d/1iXRJyvDWdKS5OdqamquQdDvOTvd_QF7J/view?usp=sharing"
+              href="https://drive.google.com/file/d/1jK97HUeqMKgFKoPguAD5AikwN0SBHRzC/view?usp=share_link"
               target="_blank"
               rel="noreferrer"
               className="bg-primary text-white px-8 py-4 tracking-wide rounded-xl lg:mt-6 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500"
