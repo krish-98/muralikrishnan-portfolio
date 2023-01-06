@@ -81,7 +81,7 @@ const Navbar = () => {
                 className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
               >
                 <a
-                  href="https://drive.google.com/file/d/1lAsPZGTKbJp-dTAYh7EMJltY4Owym1sn/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1jK97HUeqMKgFKoPguAD5AikwN0SBHRzC/view?usp=share_link"
                   target="_blank"
                   rel="noreferrer"
                   className="md:text-lg tracking-wide"
@@ -105,7 +105,7 @@ const Navbar = () => {
       {/* laptop, Desktop Navbar */}
       <nav
         className={`hidden lg:block sticky top-0 z-10 bg-white text-primary py-7 px-6 ${
-          show && "backdrop-blur-lg bg-transparent py-3"
+          show && "backdrop-blur-lg bg-inherit py-3"
         } transition-all duration-300`}
       >
         <div className="max-w-[1158px] mx-auto flex items-center justify-between">
@@ -117,28 +117,28 @@ const Navbar = () => {
           </a>
 
           <ul className="flex items-center gap-8 uppercase tracking-wider text-[.9rem] font-medium">
-            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
+            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-lightBlack  ">
               <a href="#home">Home</a>
             </li>
-            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
+            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-lightBlack  ">
               <a href="#about">About</a>
             </li>
-            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
+            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-lightBlack  ">
               <a href="#skills">Skills</a>
             </li>
-            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
+            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-lightBlack  ">
               <a href="#portfolio">Portfolio</a>
             </li>
-            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
+            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-lightBlack  ">
               <a
-                href="https://drive.google.com/file/d/1lAsPZGTKbJp-dTAYh7EMJltY4Owym1sn/view?usp=sharing"
+                href="https://drive.google.com/file/d/1jK97HUeqMKgFKoPguAD5AikwN0SBHRzC/view?usp=share_link"
                 target="_blank"
                 rel="noreferrer"
               >
                 Resume
               </a>
             </li>
-            <li className="hover:transition-all hover:border-b-[2px] cursor-pointer ">
+            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-lightBlack  ">
               <a href="#contact">Contact</a>
             </li>
           </ul>

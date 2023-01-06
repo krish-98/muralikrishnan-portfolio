@@ -32,8 +32,8 @@ const Portfolio = () => {
         <div className="flex flex-col gap-3 md:gap-5 md:items-center lg:self-center">
           <h3 className="text-xl font-semibold uppercase md:text-2xl">Musik</h3>
           <p className="text-[.9rem] md:text-base font-medium md:w-[90%] md:mx-auto md:text-center">
-            Music streaming app using Shazamcore API built with React.js and
-            Redux-toolkit for managing statesand API data fetching using RTK
+            Music streaming web app using Shazamcore API built with React.js,
+            Redux-toolkit for managing state and API data fetching using RTK
             Query.
           </p>
 
