@@ -8,7 +8,7 @@ import Contact from "./Contact"
 
 import { AiOutlineMail } from "react-icons/ai"
 import { FiTwitter } from "react-icons/fi"
-import { BsLinkedin, BsGithub } from "react-icons/bs"
+import { BsLinkedin, BsGithub, BsWhatsapp } from "react-icons/bs"
 
 const Main = () => {
   return (
@@ -78,6 +78,14 @@ const Main = () => {
                 rel="noreferrer"
               >
                 <AiOutlineMail className="w-6 h-5 lg:h-7 lg:w-8" />
+              </a>
+              <a
+                className="hover:text-primary transition-all ease-in-out duration-300 "
+                href="https://api.whatsapp.com/send?phone=919543240143"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BsWhatsapp className="w-6 h-5 lg:h-7 lg:w-8" />
               </a>
             </div>
           </div>
