@@ -7,7 +7,6 @@ const Contact = () => {
 
   const handleForm = (e) => {
     e.preventDefault()
-    console.log("form")
 
     emailjs
       .sendForm(
@@ -41,17 +40,20 @@ const Contact = () => {
           className="w-full border border-primary px-4 py-3 rounded-lg outline-none placeholder:text-sm focus:shadow-md focus:shadow-primary"
           type="text"
           placeholder="Enter your name"
+          required
         />
         <input
           className="w-full border border-primary px-4 py-3 rounded-lg outline-none placeholder:text-sm focus:shadow-md focus:shadow-primary"
           type="email"
           name="from_name"
           placeholder="Enter email address"
+          required
         />
         <textarea
           className="w-full border border-primary px-4 py-3 rounded-lg outline-none placeholder:text-sm focus:shadow-md focus:shadow-primary h-36 resize-none"
           name="message"
           placeholder="Enter Message"
+          required
         ></textarea>
 
         <button

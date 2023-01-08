@@ -20,8 +20,6 @@ const Navbar = () => {
     }
   }, [])
 
-  console.log(show)
-
   return (
     <>
       {/* Mobile Navbar */}
