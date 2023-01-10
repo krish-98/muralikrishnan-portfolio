@@ -39,7 +39,7 @@ const Main = () => {
               href="https://drive.google.com/file/d/1jK97HUeqMKgFKoPguAD5AikwN0SBHRzC/view?usp=share_link"
               target="_blank"
               rel="noreferrer"
-              className="bg-primary text-white px-8 py-4 tracking-wide rounded-xl lg:mt-6 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500"
+              className="bg-primary text-white px-8 py-4 tracking-wide rounded-xl lg:mt-6 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500 hover:shadow-lg hover:shadow-primary"
             >
               Download Resume
               <BiLinkExternal className="inline-block ml-1 h-5 w-6" />
@@ -125,7 +125,7 @@ const Main = () => {
 
               <a
                 href="#contact"
-                className=" bg-primary text-white px-8 py-4 rounded-xl tracking-wide  lg:px-8 lg:mt-4 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500"
+                className=" bg-primary text-white px-8 py-4 rounded-xl tracking-wide  lg:px-8 lg:mt-4 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500 hover:shadow-lg hover:shadow-primary "
               >
                 Contact Me
               </a>
