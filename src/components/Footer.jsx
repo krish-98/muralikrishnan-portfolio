@@ -6,7 +6,7 @@ import { GiHeartBeats } from "react-icons/gi"
 
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center gap-6 bg-highlights py-16">
+    <footer className="flex flex-col items-center gap-6 bg-highlights py-16">
       <h3 className="text-3xl font-semibold tracking-wide uppercase lg:text-4xl">
         Get In <span className="text-primary">Touch</span>
       </h3>
@@ -60,7 +60,7 @@ const Footer = () => {
           Murali Krishnan <GiHeartBeats className="inline-block" />
         </span>
       </p>
-    </div>
+    </footer>
   )
 }
 

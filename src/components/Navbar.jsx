@@ -116,40 +116,19 @@ const Navbar = () => {
 
           <ul className="flex items-center gap-8 uppercase tracking-wider text-[.9rem] font-medium ">
             <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-lightBlack relative">
-              <a
-                className="hover:before:content-['*']  before:absolute before:bottom-5 before:left-5 before:rounded-full before:bg-slate-300"
-                href="#home"
-              >
-                Home
-              </a>
+              <a href="#home">Home</a>
+            </li>
+            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-lightBlack relative">
+              <a href="#about">About</a>
+            </li>
+            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-lightBlack relative">
+              <a href="#skills">Skills</a>
+            </li>
+            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-lightBlack relative">
+              <a href="#portfolio">Portfolio</a>
             </li>
             <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-lightBlack relative">
               <a
-                className="hover:before:content-['*']  before:absolute before:bottom-5 before:left-5 before:rounded-full before:bg-slate-300"
-                href="#about"
-              >
-                About
-              </a>
-            </li>
-            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-lightBlack relative">
-              <a
-                className="hover:before:content-['*']  before:absolute before:bottom-5 before:left-5 before:rounded-full before:bg-slate-300"
-                href="#skills"
-              >
-                Skills
-              </a>
-            </li>
-            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-lightBlack relative">
-              <a
-                className="hover:before:content-['*']  before:absolute before:bottom-5 before:left-5 before:rounded-full before:bg-slate-300"
-                href="#portfolio"
-              >
-                Portfolio
-              </a>
-            </li>
-            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-lightBlack relative">
-              <a
-                className="hover:before:content-['*']  before:absolute before:bottom-5 before:left-5 before:rounded-full before:bg-slate-300"
                 href="https://drive.google.com/file/d/1jK97HUeqMKgFKoPguAD5AikwN0SBHRzC/view?usp=share_link"
                 target="_blank"
                 rel="noreferrer"
@@ -158,12 +137,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-lightBlack relative">
-              <a
-                className="hover:before:content-['*']  before:absolute before:bottom-5 before:left-5 before:rounded-full before:bg-slate-300"
-                href="#contact"
-              >
-                Contact
-              </a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>

@@ -3,7 +3,7 @@ import { skills } from "../helper/skills"
 
 const Skills = () => {
   return (
-    <div
+    <section
       id="skills"
       className="flex flex-col items-center gap-12 my-28 md:my-44"
     >
@@ -21,7 +21,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 

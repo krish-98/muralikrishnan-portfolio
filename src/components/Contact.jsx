@@ -26,7 +26,7 @@ const Contact = () => {
   }
 
   return (
-    <div id="contact" className="flex flex-col items-center mt-28 mb-16">
+    <section id="contact" className="flex flex-col items-center mt-28 mb-16">
       <h2 className="text-3xl font-semibold tracking-wide uppercase my-4 lg:text-4xl">
         Contact
       </h2>
@@ -64,7 +64,7 @@ const Contact = () => {
           <RiMailSendLine className="w-7 h-5" />
         </button>
       </form>
-    </div>
+    </section>
   )
 }
 
