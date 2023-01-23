@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="h-screen flex items-center justify-center w-full py-12 md:py-24 lg:px-6 xl:px-0"
+      className="h-[calc(100vh-64px)] flex items-center justify-center w-full py-12 md:py-24 lg:px-6 lg:h-[calc(100vh-74px)] xl:px-0"
     >
       <div className="flex flex-col items-center gap-6 w-full text-center lg:items-start lg:text-left">
         <h1 className="font-bold text-5xl leading-tight tracking-wider md:text-[3.5rem]">
@@ -20,9 +20,10 @@ const Hero = () => {
           Frontend Developer
         </p>
 
-        <p className="text-sm leading-6 font-semibold tracking-wide md:w-[70%] lg:text-base">
-          I Design and Develop website & web apps. From blank HTML DOM page to
-          fully functional web app using modern-day JavaScript 🖤 technologies.
+        <p className="text-sm leading-6 font-semibold tracking-wide md:w-[70%] lg:text-base lg:indent-2 lg:w-full">
+          I Build and <span className="line-through">Break</span> Debug web
+          apps. From blank HTML DOM page to fully functional web app using
+          modern-day JavaScript 🖤 technologies.
         </p>
 
         <a

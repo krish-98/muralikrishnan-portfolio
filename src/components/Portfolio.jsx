@@ -15,7 +15,7 @@ import { SiReactrouter, SiRedux } from "react-icons/si"
 const Portfolio = () => {
   return (
     <>
-      <div id="portfolio" className="mb-80" />
+      <div id="portfolio" className="lg:mb-80" />
       <section>
         <h2 className="text-center text-3xl font-semibold tracking-wide uppercase my-6 lg:my-16 lg:text-4xl">
           Portfolio

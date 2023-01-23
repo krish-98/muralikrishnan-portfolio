@@ -28,7 +28,7 @@ const Navbar = () => {
           show && "backdrop-blur-sm bg-transparent"
         } transition-all duration-300`}
       >
-        <a className="text-2xl" href="#home">
+        <a className="text-2xl" href="#top">
           MK
         </a>
 

@@ -4,7 +4,7 @@ import { skills } from "../helper/skills"
 const Skills = () => {
   return (
     <>
-      <div id="skills" className="mb-36" />
+      <div id="skills" className="lg:mb-36" />
       <section className="flex flex-col items-center gap-12 my-28 md:my-44">
         <h2 className="text-3xl font-semibold tracking-wide uppercase my-4 lg:text-4xl">
           Skills
