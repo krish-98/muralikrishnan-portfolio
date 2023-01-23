@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="h-[calc(100vh-64px)] flex items-center justify-center w-full py-12 md:py-24 lg:px-6 xl:px-0"
+      className="h-screen flex items-center justify-center w-full py-12 md:py-24 lg:px-6 xl:px-0"
     >
       <div className="flex flex-col items-center gap-6 w-full text-center lg:items-start lg:text-left">
         <h1 className="font-bold text-5xl leading-tight tracking-wider md:text-[3.5rem]">
@@ -26,7 +26,7 @@ const Hero = () => {
         </p>
 
         <a
-          href="https://drive.google.com/file/d/1jK97HUeqMKgFKoPguAD5AikwN0SBHRzC/view?usp=share_link"
+          href="https://drive.google.com/file/d/1X_aVb3CKEwvWC8RuKvXyloBjEFeVz3Va/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
           className="bg-primary text-white px-8 py-4 tracking-wide rounded-xl lg:mt-6 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500 hover:shadow-lg hover:shadow-primary"
