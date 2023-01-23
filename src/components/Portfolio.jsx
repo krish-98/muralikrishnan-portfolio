@@ -37,7 +37,7 @@ const Portfolio = () => {
             </h3>
             <p className="text-[.9rem] md:text-base font-medium md:w-[90%] md:mx-auto md:text-center">
               Music streaming web app using Shazamcore API built with React.js,
-              Redux-toolkit for managing state and API data fetching using RTK
+              Redux-toolkit for managing state, and fetching API data using RTK
               Query.
             </p>
 
@@ -96,9 +96,8 @@ const Portfolio = () => {
             </h3>
             <p className="text-[.9rem] md:text-base font-medium md:w-[90%] md:mx-auto md:text-center">
               An online food ordering application built using Tailwind CSS,
-              React.js for UI Rendering along with Redux-Toolkit for state
-              management and Firebase for user authentication, storage and
-              database.
+              React.js for UI Rendering, Redux-Toolkit for state management, and
+              Firebase for user authentication, storage and database.
             </p>
 
             {/* Tech stack */}

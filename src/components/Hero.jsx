@@ -21,9 +21,9 @@ const Hero = () => {
         </p>
 
         <p className="text-sm leading-6 font-semibold tracking-wide md:w-[70%] lg:text-base lg:indent-2 lg:w-full">
-          I Build and <span className="line-through">Break</span> Debug web
-          apps. From blank HTML DOM page to fully functional web app using
-          modern-day JavaScript 🖤 technologies.
+          I Build and <span className="line-through">Break</span> Debug web apps
+          from blank HTML DOM page to fully functional web app using modern-day
+          JavaScript 🖤 technologies.
         </p>
 
         <a
