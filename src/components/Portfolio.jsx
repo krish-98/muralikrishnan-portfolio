@@ -37,7 +37,7 @@ const Portfolio = () => {
             </h3>
             <p className="text-[.9rem] md:text-base font-medium md:w-[90%] md:mx-auto md:text-center">
               Music streaming web app using Shazamcore API built with React.js,
-              Redux-toolkit for managing state, and fetching API data using RTK
+              Redux-toolkit for managing state, and data fetching using RTK
               Query.
             </p>
 
