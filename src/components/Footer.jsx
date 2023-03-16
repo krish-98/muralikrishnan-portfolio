@@ -1,7 +1,7 @@
 import React from "react"
 import { AiOutlineMail } from "react-icons/ai"
 import { FiTwitter } from "react-icons/fi"
-import { BsLinkedin, BsGithub, BsWhatsapp } from "react-icons/bs"
+import { BsLinkedin, BsGithub } from "react-icons/bs"
 import { GiHeartBeats } from "react-icons/gi"
 
 const Footer = () => {
@@ -43,14 +43,6 @@ const Footer = () => {
           rel="noreferrer"
         >
           <AiOutlineMail className="w-6 h-5 lg:h-7 lg:w-8" />
-        </a>
-        <a
-          className="hover:text-primary transition-all ease-in-out duration-300 "
-          href="https://api.whatsapp.com/send?phone=919543240143"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <BsWhatsapp className="w-6 h-5 lg:h-7 lg:w-8" />
         </a>
       </div>
 

@@ -2,7 +2,8 @@ import Dev from "../assets/dev.svg"
 import { BiLinkExternal } from "react-icons/bi"
 import { AiOutlineMail } from "react-icons/ai"
 import { FiTwitter } from "react-icons/fi"
-import { BsLinkedin, BsGithub, BsWhatsapp } from "react-icons/bs"
+import { BsLinkedin, BsGithub } from "react-icons/bs"
+import Lottie from "react-lottie"
 
 const Hero = () => {
   return (
@@ -46,6 +47,7 @@ const Hero = () => {
           >
             <BsLinkedin className="w-6 h-5 lg:h-7 lg:w-8" />
           </a>
+
           <a
             className="hover:text-primary transition-all ease-in-out duration-300 "
             href="https://twitter.com/muralikrishn_an"
@@ -54,6 +56,7 @@ const Hero = () => {
           >
             <FiTwitter className="w-6 h-5 lg:h-7 lg:w-8" />
           </a>
+
           <a
             className="hover:text-primary transition-all ease-in-out duration-300 "
             href="https://github.com/krish-98"
@@ -62,6 +65,7 @@ const Hero = () => {
           >
             <BsGithub className="w-6 h-5 lg:h-7 lg:w-8" />
           </a>
+
           <a
             className="hover:text-primary transition-all ease-in-out duration-300 "
             href="mailto:muralikrishnanm98@gmail.com"
@@ -69,14 +73,6 @@ const Hero = () => {
             rel="noreferrer"
           >
             <AiOutlineMail className="w-6 h-5 lg:h-7 lg:w-8" />
-          </a>
-          <a
-            className="hover:text-primary transition-all ease-in-out duration-300 "
-            href="https://api.whatsapp.com/send?phone=919543240143"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <BsWhatsapp className="w-6 h-5 lg:h-7 lg:w-8" />
           </a>
         </div>
       </div>
