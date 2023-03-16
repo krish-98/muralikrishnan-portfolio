@@ -3,28 +3,46 @@ import { BiLinkExternal } from "react-icons/bi"
 import { AiOutlineMail } from "react-icons/ai"
 import { FiTwitter } from "react-icons/fi"
 import { BsLinkedin, BsGithub } from "react-icons/bs"
-import Lottie from "react-lottie"
+// import Lottie from "react-lottie"
+// import heroAnimation from "../assets/heroAnimation.json"
 
 const Hero = () => {
+  // const defaultOptions = {
+  //   loop: true,
+  //   autoplay: true,
+  //   animationData: heroAnimation,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // }
+
   return (
     <section
       id="home"
       className="h-[calc(100vh-64px)] flex items-center justify-center w-full py-12 md:py-24 lg:px-6 lg:h-[calc(100vh-74px)] xl:px-0"
     >
-      <div className="flex flex-col items-center gap-6 w-full text-center lg:items-start lg:text-left">
+      <div className="flex flex-col items-center gap-7 w-full text-center lg:items-start lg:text-left">
         <h1 className="font-bold text-5xl leading-tight tracking-wider md:text-[3.5rem]">
           Bonjour, I'm{" "}
           <span className="font-bold text-primary">Murali Krishnan</span>
         </h1>
 
         <p className="font-medium underline underline-offset-2 text-textGray md:text-lg md:underline-offset-4">
-          Frontend Developer
+          Front-End Developer
         </p>
 
         <p className="text-sm leading-6 font-semibold tracking-wide md:w-[70%] lg:text-base lg:indent-1 lg:w-full">
-          I Build and <span className="line-through">Break</span> Debug web apps
-          from blank HTML DOM page to fully functional web apps using modern-day
-          JavaScript 🖤 technologies.
+          I Build and{" "}
+          <span className="relative">
+            <span className="line-through decoration-2 decoration-primary">
+              Break
+            </span>
+            <span className="absolute bottom-[.8rem] left-[-2px] lg:left-[-6px] lg:bottom-4 ">
+              Debug
+            </span>
+          </span>{" "}
+          websites and web apps from blank HTML DOM page to fully functional web
+          apps using modern-day JavaScript 🖤 technologies.
         </p>
 
         <a
@@ -80,6 +98,7 @@ const Hero = () => {
       {/* Hero banner image */}
       <div className="hidden lg:block">
         <img src={Dev} alt="Dev" />
+        {/* <Lottie options={defaultOptions} height={400} width={600} /> */}
       </div>
     </section>
   )
