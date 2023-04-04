@@ -1,8 +1,9 @@
-import React, { useRef } from "react"
+import React, { useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
 import { RiMailSendLine } from "react-icons/ri"
 
 const Contact = () => {
+  const [sendMsg, setSendMsg] = useState("")
   const formRef = useRef()
 
   const handleForm = (e) => {
@@ -10,17 +11,21 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_gtcqruh",
+        "service_iz1xi0h",
         "template_fdqjlle",
         formRef.current,
         "ePt-fCck01QMroed-"
       )
       .then(
         (result) => {
+          setSendMsg("Message Sent")
           console.log(result.text)
+          setTimeout(() => setSendMsg(""), 3000)
         },
         (error) => {
+          setSendMsg("Message didn't deliver")
           console.log(error.text)
+          setTimeout(() => setSendMsg(""), 3000)
         }
       )
   }
@@ -36,12 +41,13 @@ const Contact = () => {
         onSubmit={handleForm}
         className="flex flex-col items-center gap-5 w-full my-7 md:w-[70%] lg:w-[50%]"
       >
-        <input
+        {/* <input
           className="w-full border border-primary px-4 py-3 rounded-lg outline-none placeholder:text-sm focus:shadow-md focus:shadow-primary"
           type="text"
           placeholder="Enter your name"
           required
-        />
+        /> */}
+        {sendMsg.length > 0 && <p>{sendMsg}</p>}
         <input
           className="w-full border border-primary px-4 py-3 rounded-lg outline-none placeholder:text-sm focus:shadow-md focus:shadow-primary"
           type="email"
