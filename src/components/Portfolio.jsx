@@ -96,9 +96,9 @@ const Portfolio = () => {
               City
             </h3>
             <p className="text-[.9rem] md:text-base font-medium md:w-[90%] md:mx-auto md:text-center">
-              An online food ordering application built using Tailwind CSS,
-              React.js for UI Rendering, Redux-Toolkit for state management, and
-              Firebase for user authentication, storage and database.
+              A food ordering application built using Tailwind CSS, React.js for
+              UI logic, Redux-Toolkit for state management, and Firebase for
+              user authentication, storage and database.
             </p>
 
             {/* Tech stack */}

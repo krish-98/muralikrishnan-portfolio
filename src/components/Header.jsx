@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { HiMenu, HiX } from "react-icons/hi"
 
-const Navbar = () => {
+const Header = () => {
   const [toggle, setToggle] = useState(false)
   const [show, setShow] = useState(false)
 
@@ -79,7 +79,7 @@ const Navbar = () => {
                 className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
               >
                 <a
-                  href="https://drive.google.com/file/d/1X_aVb3CKEwvWC8RuKvXyloBjEFeVz3Va/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1A5_kEfsajkKBeA1dgvlNmuz4BTht4vo4/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                   className="md:text-lg tracking-wide"
@@ -129,7 +129,7 @@ const Navbar = () => {
             </li>
             <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-white">
               <a
-                href="https://drive.google.com/file/d/1X_aVb3CKEwvWC8RuKvXyloBjEFeVz3Va/view?usp=sharing"
+                href="https://drive.google.com/file/d/1A5_kEfsajkKBeA1dgvlNmuz4BTht4vo4/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -146,4 +146,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Header

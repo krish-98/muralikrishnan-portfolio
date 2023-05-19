@@ -31,7 +31,7 @@ const Hero = () => {
           Front-End Developer
         </p>
 
-        <p className="text-sm leading-6 font-semibold tracking-wide md:w-[70%] lg:text-base lg:indent-1 lg:w-full">
+        <p className="text-sm leading-6 font-semibold tracking-wide md:w-[70%] lg:text-base lg:indent-1 lg:w-[93%]">
           I Build and{" "}
           <span className="relative">
             <span className="line-through decoration-2 decoration-primary">
@@ -41,12 +41,13 @@ const Hero = () => {
               Debug
             </span>
           </span>{" "}
-          websites and web apps from blank HTML DOM page to fully functional web
-          apps using modern-day JavaScript 🖤 technologies.
+          websites and web apps from boring HTML DOM pages to fully functional
+          apps using modern-day JavaScript 🖤 technologies and a pinch of my
+          brain.
         </p>
 
         <a
-          href="https://drive.google.com/file/d/1X_aVb3CKEwvWC8RuKvXyloBjEFeVz3Va/view?usp=sharing"
+          href="https://drive.google.com/file/d/1A5_kEfsajkKBeA1dgvlNmuz4BTht4vo4/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
           className="bg-primary text-white px-8 py-4 tracking-wide rounded-xl lg:mt-6 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500 hover:shadow-lg hover:shadow-primary"
