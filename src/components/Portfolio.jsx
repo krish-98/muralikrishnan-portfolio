@@ -27,65 +27,6 @@ const Portfolio = () => {
           {/* Project sceernshot */}
           <img
             className="rounded-lg lg:w-[50%]"
-            src={Musik}
-            alt="project cover"
-          />
-
-          {/* Project desc */}
-          <div className="flex flex-col gap-3 md:gap-5 md:items-center lg:self-center">
-            <h3 className="text-xl font-semibold uppercase md:text-2xl">
-              Musik
-            </h3>
-            <p className="text-[.9rem] md:text-base font-medium md:w-[90%] md:mx-auto md:text-center">
-              Music streaming web app using Shazamcore API built with React.js,
-              Redux-toolkit for managing state, and data fetching using RTK
-              Query.
-            </p>
-
-            {/* Tech stack */}
-            <div className="flex items-center justify-center gap-2 mb-2">
-              <span>
-                <SiTailwindcss className="w-12 h-8 text-[#38bdf8] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
-              </span>
-              <span>
-                <SiJavascript className="w-12 h-8 text-[#f7e018] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
-              </span>
-              <span>
-                <FaReact className="w-12 h-8 text-[#61dbfb] flex scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
-              </span>
-              <span>
-                <SiFirebase className="w-12 h-8 text-[#ffcb2e] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
-              </span>
-            </div>
-
-            <div className="my-4">
-              <a
-                className="text-sm bg-white px-4 py-3 text-primary border border-primary rounded-lg mr-4 md:px-8 md:py-5 hover:shadow-md hover:shadow-primary transition ease-in-out duration-500"
-                href="https://github.com/krish-98/Musik"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Source Code
-                <SiGithub className="inline ml-2 w-4 h-4" />
-              </a>
-              <a
-                className="text-sm bg-primary px-4 py-3 text-white rounded-lg md:px-8 md:py-5 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500"
-                href="https://my-musik.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Live Project
-                <BiLinkExternal className="inline ml-2 w-4 h-4" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Project - 2 */}
-        <div className="flex flex-col gap-4 my-12 p-4 shadow-lg rounded-md md:py-6 lg:flex-row hover:scale-105 transition-all duration-500 ease-in-out">
-          {/* Project sceernshot */}
-          <img
-            className="rounded-lg lg:w-[50%]"
             src={City}
             alt="project cover"
           />
@@ -146,7 +87,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        {/* Project - 3 */}
+        {/* Project - 2 */}
         <div className="flex flex-col gap-4 my-12 p-4 shadow-lg rounded-md md:py-6 lg:flex-row hover:scale-105 transition-all duration-500 ease-in-out">
           {/* Project sceernshot */}
           <img
@@ -198,6 +139,65 @@ const Portfolio = () => {
               <a
                 className="text-sm bg-primary px-4 py-3 text-white rounded-lg md:px-8 md:py-5 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500"
                 href="https://audiophile-web.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live Project
+                <BiLinkExternal className="inline ml-2 w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Project - 3 */}
+        <div className="flex flex-col gap-4 my-12 p-4 shadow-lg rounded-md md:py-6 lg:flex-row hover:scale-105 transition-all duration-500 ease-in-out">
+          {/* Project sceernshot */}
+          <img
+            className="rounded-lg lg:w-[50%]"
+            src={Musik}
+            alt="project cover"
+          />
+
+          {/* Project desc */}
+          <div className="flex flex-col gap-3 md:gap-5 md:items-center lg:self-center">
+            <h3 className="text-xl font-semibold uppercase md:text-2xl">
+              Musik
+            </h3>
+            <p className="text-[.9rem] md:text-base font-medium md:w-[90%] md:mx-auto md:text-center">
+              Music streaming web app using Shazamcore API built with React.js,
+              Redux-toolkit for managing state, and data fetching using RTK
+              Query.
+            </p>
+
+            {/* Tech stack */}
+            <div className="flex items-center justify-center gap-2 mb-2">
+              <span>
+                <SiTailwindcss className="w-12 h-8 text-[#38bdf8] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
+              </span>
+              <span>
+                <SiJavascript className="w-12 h-8 text-[#f7e018] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
+              </span>
+              <span>
+                <FaReact className="w-12 h-8 text-[#61dbfb] flex scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
+              </span>
+              <span>
+                <SiFirebase className="w-12 h-8 text-[#ffcb2e] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
+              </span>
+            </div>
+
+            <div className="my-4">
+              <a
+                className="text-sm bg-white px-4 py-3 text-primary border border-primary rounded-lg mr-4 md:px-8 md:py-5 hover:shadow-md hover:shadow-primary transition ease-in-out duration-500"
+                href="https://github.com/krish-98/Musik"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Source Code
+                <SiGithub className="inline ml-2 w-4 h-4" />
+              </a>
+              <a
+                className="text-sm bg-primary px-4 py-3 text-white rounded-lg md:px-8 md:py-5 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500"
+                href="https://my-musik.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >

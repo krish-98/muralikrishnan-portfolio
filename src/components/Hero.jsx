@@ -19,7 +19,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="h-[calc(100vh-64px)] flex items-center justify-center w-full py-12 md:py-24 lg:px-6 lg:h-[calc(100vh-74px)] xl:px-0"
+      className="h-[calc(100vh-64px)] flex items-center justify-center w-full py-4 md:py-24 lg:px-6 lg:h-[calc(100vh-74px)] xl:px-0"
     >
       <div className="flex flex-col items-center gap-7 w-full text-center lg:items-start lg:text-left">
         <h1 className="font-bold text-5xl leading-tight tracking-wider md:text-[3.5rem]">
