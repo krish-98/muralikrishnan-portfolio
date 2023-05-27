@@ -79,7 +79,7 @@ const Header = () => {
                 className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
               >
                 <a
-                  href="https://drive.google.com/file/d/1A5_kEfsajkKBeA1dgvlNmuz4BTht4vo4/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1j4PL2hYX3tYH5Km2lqMO0LjGpmpwOr03/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                   className="md:text-lg tracking-wide"
@@ -129,7 +129,7 @@ const Header = () => {
             </li>
             <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-white">
               <a
-                href="https://drive.google.com/file/d/1A5_kEfsajkKBeA1dgvlNmuz4BTht4vo4/view?usp=sharing"
+                href="https://drive.google.com/file/d/1j4PL2hYX3tYH5Km2lqMO0LjGpmpwOr03/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
