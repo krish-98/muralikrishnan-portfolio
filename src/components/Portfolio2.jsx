@@ -1,13 +1,6 @@
 import React from "react"
 import { BiLinkExternal } from "react-icons/bi"
-import { FaReact } from "react-icons/fa"
-import {
-  SiJavascript,
-  SiFirebase,
-  SiTailwindcss,
-  SiGithub,
-} from "react-icons/si"
-import { SiReactrouter, SiRedux } from "react-icons/si"
+import { SiGithub } from "react-icons/si"
 import { portfolios } from "../helper/constants"
 
 const Portfolio2 = () => {
@@ -41,28 +34,13 @@ const Portfolio2 = () => {
               </p>
 
               {/* Tech stack */}
-              <div className="flex items-center justify-center gap-2 mb-2">
-                <span>
-                  <SiTailwindcss className="w-12 h-8 text-[#38bdf8] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
-                </span>
-                <span>
-                  <SiJavascript className="w-12 h-8 text-[#f7e018] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
-                </span>
-                <span>
-                  <FaReact className="w-12 h-8 text-[#61dbfb] flex scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
-                </span>
-                <span>
-                  <SiRedux className="w-12 h-8 text-[#764abc] flex scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
-                </span>
-                <span>
-                  <SiReactrouter className="w-12 h-8 text-[#f44250] flex scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
-                </span>
-                <span>
-                  <SiFirebase className="w-12 h-8 text-[#ffcb2e] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300" />
-                </span>
+              <div className="flex flex-wrap items-center justify-center gap-2 mb-2">
+                {portfolio.stack.map((item, index) => (
+                  <span key={index}>{item}</span>
+                ))}
               </div>
 
-              <div className="my-4">
+              <div className="my-6 text-center">
                 <a
                   className="text-sm bg-white px-4 py-3 text-primary border border-primary rounded-lg mr-4 md:px-8 md:py-5 hover:shadow-md hover:shadow-primary transition ease-in-out duration-500"
                   href={portfolio.sourceLink}
