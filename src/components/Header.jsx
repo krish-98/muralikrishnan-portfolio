@@ -102,8 +102,8 @@ const Header = () => {
 
       {/* laptop, Desktop Navbar */}
       <nav
-        className={`hidden lg:block sticky top-0 z-10 text-primary py-5 px-6 bg-white ${
-          show && "bg-[#9153F4] text-white"
+        className={`hidden lg:block sticky top-0 z-50 text-primary py-5 px-6 bg-white ${
+          show && "bg-[#9153f4] text-white"
         } transition-all duration-300`}
       >
         <div className="max-w-[1158px] mx-auto flex items-center justify-between">
@@ -115,19 +115,19 @@ const Header = () => {
           </a>
 
           <ul className="flex items-center gap-8 uppercase tracking-wider text-[.9rem] font-medium ">
-            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-white">
+            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:text-[#3f3d56]">
               <a href="#home">Home</a>
             </li>
-            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-white">
+            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:text-[#3f3d56]">
               <a href="#about">About</a>
             </li>
-            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-white">
+            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:text-[#3f3d56]">
               <a href="#skills">Skills</a>
             </li>
-            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-white">
+            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:text-[#3f3d56]">
               <a href="#portfolio">Portfolio</a>
             </li>
-            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-white">
+            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:text-[#3f3d56]">
               <a
                 href="https://drive.google.com/file/d/1e5B0CPamP0gZlX0z4ybcZ0WPV1jo2z8h/view?usp=sharing"
                 target="_blank"
@@ -136,7 +136,7 @@ const Header = () => {
                 Resume
               </a>
             </li>
-            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:border-b-[2px] hover:border-white">
+            <li className="cursor-pointer transition-all ease-in-out duration-300 hover:text-[#3f3d56]">
               <a href="#contact">Contact</a>
             </li>
           </ul>

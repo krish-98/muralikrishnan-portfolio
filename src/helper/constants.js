@@ -12,6 +12,19 @@ import {
 } from "react-icons/si"
 import { GrStripe } from "react-icons/gr"
 
+export const links = [
+  { navigation: "#home", linkName: "Home" },
+  { navigation: "#about", linkName: "About" },
+  { navigation: "#skills", linkName: "Skills" },
+  { navigation: "#portfolio", linkName: "Portfolio" },
+  {
+    navigation:
+      "https://drive.google.com/file/d/1e5B0CPamP0gZlX0z4ybcZ0WPV1jo2z8h/view?usp=sharing",
+    linkName: "Resume",
+  },
+  { navigation: "#contact", linkName: "Contact" },
+]
+
 export const portfolios = [
   {
     img: SoulHeat,

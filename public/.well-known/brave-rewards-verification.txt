@@ -1,4 +1,4 @@
-This is a Brave Rewards publisher verification file.
+This is a Brave Creators publisher verification file.
 
-Domain: muralikrishnan.ml
-Token: f3d5e603a1c6aa21a6e09f55f02909e949d4a098dbb4e4de548672570a8f81ae
+Domain: muralikrishnan.vercel.app
+Token: e59114d0538d15b45f9a9bcb2e8c293c6b5c335bed1ffacb784866724a025c63

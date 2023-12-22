@@ -1,5 +1,5 @@
 import { ImHtmlFive } from "react-icons/im"
-import { FaReact } from "react-icons/fa"
+import { FaNodeJs, FaReact } from "react-icons/fa"
 import {
   SiCss3,
   SiJavascript,
@@ -7,7 +7,9 @@ import {
   SiTailwindcss,
   SiGithub,
   SiRedux,
+  SiExpress,
 } from "react-icons/si"
+import { BiLogoGit } from "react-icons/bi"
 
 export const skills = [
   {
@@ -45,7 +47,7 @@ export const skills = [
     id: 6,
     name: "Redux",
     icon: <SiRedux className="w-10 h-14 text-[#764abc]" />,
-    color: "#61dbfb",
+    color: "#764abc",
   },
   {
     id: 7,
@@ -55,6 +57,24 @@ export const skills = [
   },
   {
     id: 8,
+    name: "NodeJS",
+    icon: <FaNodeJs className="w-10 h-14 text-[#8fc708]" />,
+    color: "#8fc708",
+  },
+  {
+    id: 9,
+    name: "ExpressJS",
+    icon: <SiExpress className="w-10 h-14 text-[#1b1f23]" />,
+    color: "#1b1f23",
+  },
+  {
+    id: 10,
+    name: "Git",
+    icon: <BiLogoGit className="w-10 h-14 text-[#e84d31]" />,
+    color: "#e84d31",
+  },
+  {
+    id: 11,
     name: "Github",
     icon: <SiGithub className="w-10 h-14 text-[#1b1f23]" />,
     color: "#1b1f23",

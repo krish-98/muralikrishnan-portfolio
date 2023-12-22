@@ -4,7 +4,6 @@ import About from "./About"
 import Skills from "./Skills"
 import Portfolio from "./Portfolio"
 import Contact from "./Contact"
-import Portfolio2 from "./Portfolio2"
 
 const Main = () => {
   return (
@@ -16,8 +15,7 @@ const Main = () => {
 
         <Skills />
 
-        {/* <Portfolio /> */}
-        <Portfolio2 />
+        <Portfolio />
 
         <Contact />
       </div>

@@ -3,23 +3,12 @@ import { BiLinkExternal } from "react-icons/bi"
 import { AiOutlineMail } from "react-icons/ai"
 import { FiTwitter } from "react-icons/fi"
 import { BsLinkedin, BsGithub } from "react-icons/bs"
-// import Lottie from "react-lottie"
-// import heroAnimation from "../assets/heroAnimation.json"
 
 const Hero = () => {
-  // const defaultOptions = {
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData: heroAnimation,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice",
-  //   },
-  // }
-
   return (
     <section
       id="home"
-      className="h-[calc(100vh-64px)] flex items-center justify-center w-full py-4 md:py-24 lg:px-6 lg:h-[calc(100vh-74px)] xl:px-0"
+      className="h-[calc(100vh-64px)] flex items-center justify-center w-full  md:py-24 lg:px-6 lg:h-[calc(100vh-74px)] xl:px-0"
     >
       <div className="flex flex-col items-center gap-7 w-full text-center lg:items-start lg:text-left">
         <h1 className="font-bold text-5xl leading-tight tracking-wider md:text-[3.5rem]">
@@ -27,21 +16,21 @@ const Hero = () => {
           <span className="font-bold text-primary">Murali Krishnan</span>
         </h1>
 
-        <p className="font-medium underline underline-offset-2 text-textGray md:text-lg md:underline-offset-4">
-          Front-End Developer
+        <p className="font-medium text-textGray underline underline-offset-4   decoration-primary md:text-lg">
+          Full Stack Developer
         </p>
 
         <p className="text-sm leading-6 font-semibold tracking-wide md:w-[70%] lg:text-base lg:indent-1 lg:w-[93%]">
-          I Build and{" "}
+          I build and{" "}
           <span className="relative">
             <span className="line-through decoration-2 decoration-primary">
-              Break
+              break
             </span>
             <span className="absolute bottom-[.8rem] left-[-2px] lg:left-[-6px] lg:bottom-4 ">
-              Debug
+              debug
             </span>
           </span>{" "}
-          websites and web apps from boring HTML DOM pages to fully functional
+          web applications, and turn boring HTML DOM pages into fully functional
           apps using modern-day JavaScript 🖤 technologies and a pinch of my
           brain.
         </p>
@@ -50,9 +39,9 @@ const Hero = () => {
           href="https://drive.google.com/file/d/1e5B0CPamP0gZlX0z4ybcZ0WPV1jo2z8h/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
-          className="bg-primary text-white px-8 py-4 tracking-wide rounded-xl lg:mt-6 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500 hover:shadow-lg hover:shadow-primary"
+          className="bg-primary text-white px-6 py-4 tracking-wide rounded-xl lg:mt-6 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500 hover:shadow-lg hover:shadow-primary"
         >
-          Download Resume
+          View Resume
           <BiLinkExternal className="inline-block ml-1 h-5 w-6" />
         </a>
 
@@ -99,7 +88,6 @@ const Hero = () => {
       {/* Hero banner image */}
       <div className="hidden lg:block">
         <img src={Dev} alt="Dev" />
-        {/* <Lottie options={defaultOptions} height={400} width={600} /> */}
       </div>
     </section>
   )
