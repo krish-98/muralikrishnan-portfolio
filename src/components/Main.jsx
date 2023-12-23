@@ -8,7 +8,7 @@ import Contact from "./Contact"
 const Main = () => {
   return (
     <main className="px-5 text-lightBlack">
-      <div className="max-w-[1158px] mx-auto">
+      <div className="max-w-6xl mx-auto">
         <Hero />
 
         <About />

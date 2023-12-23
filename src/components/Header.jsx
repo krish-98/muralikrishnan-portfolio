@@ -102,11 +102,11 @@ const Header = () => {
 
       {/* laptop, Desktop Navbar */}
       <nav
-        className={`hidden lg:block sticky top-0 z-50 text-primary py-5 px-6 bg-white ${
-          show && "bg-[#9153f4] text-white"
-        } transition-all duration-300`}
+        className={`hidden lg:block sticky top-0 z-50 text-primary py-5 px-6 bg-white transition-all duration-300 ${
+          show && "bg-primary text-white"
+        }`}
       >
-        <div className="max-w-[1158px] mx-auto flex items-center justify-between">
+        <div className="max-w-6xl mx-auto flex items-center justify-between">
           <a
             href="#top"
             className="text-2xl uppercase font-semibold cursor-pointer hover:animate-pulse"
