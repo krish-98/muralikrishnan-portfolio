@@ -1,5 +1,18 @@
-import React, { useEffect, useState } from "react"
-import { HiMenu, HiX } from "react-icons/hi"
+import { useEffect, useState } from 'react'
+import { HiMenu, HiX } from 'react-icons/hi'
+
+// const links = [
+//   { navigation: '#home', linkName: 'Home' },
+//   { navigation: '#about', linkName: 'About' },
+//   { navigation: '#skills', linkName: 'Skills' },
+//   { navigation: '#portfolio', linkName: 'Portfolio' },
+//   {
+//     navigation:
+//       'https://drive.google.com/file/d/1e5B0CPamP0gZlX0z4ybcZ0WPV1jo2z8h/view?usp=sharing',
+//     linkName: 'Resume',
+//   },
+//   { navigation: '#contact', linkName: 'Contact' },
+// ]
 
 const Header = () => {
   const [toggle, setToggle] = useState(false)
@@ -14,9 +27,9 @@ const Header = () => {
   }
 
   useEffect(() => {
-    window.addEventListener("scroll", transitionNavbar)
+    window.addEventListener('scroll', transitionNavbar)
     return () => {
-      window.removeEventListener("scroll", transitionNavbar)
+      window.removeEventListener('scroll', transitionNavbar)
     }
   }, [])
 
@@ -25,7 +38,7 @@ const Header = () => {
       {/* Mobile Navbar */}
       <nav
         className={`lg:hidden sticky top-0 z-10 flex items-center justify-between p-4 bg-white text-primary ${
-          show && "backdrop-blur-sm bg-transparent"
+          show && 'backdrop-blur-sm bg-transparent'
         } transition-all duration-300`}
       >
         <a className="text-2xl" href="#top">
@@ -102,9 +115,7 @@ const Header = () => {
 
       {/* laptop, Desktop Navbar */}
       <nav
-        className={`hidden lg:block sticky top-0 z-50 text-primary py-5 px-6 bg-white transition-all duration-300 ${
-          show && "bg-primary text-white"
-        }`}
+        className={`hidden lg:block sticky top-0 z-50 text-primary py-5 px-6 bg-white transition-all duration-300}`}
       >
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <a
@@ -114,7 +125,7 @@ const Header = () => {
             Murali Krishnan
           </a>
 
-          <ul className="flex items-center gap-8 uppercase tracking-wider text-[.9rem] font-medium ">
+          <ul className="flex items-center gap-8 uppercase tracking-wider text-[.9rem] font-medium">
             <li className="cursor-pointer transition-all ease-in-out duration-300 hover:text-[#3f3d56]">
               <a href="#home">Home</a>
             </li>
