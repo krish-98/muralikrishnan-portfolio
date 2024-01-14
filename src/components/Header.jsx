@@ -24,8 +24,8 @@ const Header = () => {
     <>
       {/* Mobile Navbar */}
       <nav
-        className={`lg:hidden sticky top-0 z-50 flex items-center justify-between p-4 bg-white text-primary ${
-          show && 'bg-transparent'
+        className={`lg:hidden sticky top-0 z-50 flex items-center justify-between p-4 text-primary ${
+          show ? 'bg-primary text-white' : 'bg-white'
         }
         } transition-all duration-300`}
       >
@@ -36,10 +36,10 @@ const Header = () => {
         {!toggle ? (
           <HiMenu onClick={toggleHandler} className="w-8 h-8 cursor-pointer" />
         ) : (
-          <div className="fixed top-0 left-0 w-screen h-screen bg-white text-secondary flex flex-col justify-center">
+          <div className="fixed top-0 left-0 w-screen h-screen bg-primary text-secondary flex flex-col justify-center">
             <HiX
               onClick={toggleHandler}
-              className="absolute top-4 right-4 w-8 h-8 cursor-pointer text-[#7050ef]"
+              className="absolute top-4 right-4 w-8 h-8 cursor-pointer text-white"
             />
 
             <ul className="flex flex-col items-center justify-center gap-9 font-semibold uppercase">
@@ -80,7 +80,7 @@ const Header = () => {
                 className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
               >
                 <a
-                  href="https://drive.google.com/file/d/1e5B0CPamP0gZlX0z4ybcZ0WPV1jo2z8h/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1M-WemcWwsdlyny8oqrBCG34g8SNVk37E/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                   className="md:text-lg tracking-wide"
@@ -103,8 +103,8 @@ const Header = () => {
 
       {/* laptop, Desktop Navbar */}
       <nav
-        className={`hidden lg:block sticky top-0 z-50 text-primary py-5 px-6 bg-white transition-all duration-300 ${
-          show && 'bg-[#9153f4] text-white'
+        className={`hidden lg:block sticky top-0 z-50 text-primary py-5 px-6 transition-all duration-300 ${
+          show ? 'bg-[#9153f4] text-white' : 'bg-white'
         }`}
       >
         <div className="max-w-6xl mx-auto flex items-center justify-between">
@@ -130,7 +130,7 @@ const Header = () => {
             </li>
             <li className="cursor-pointer transition-all ease-in-out duration-300 hover:text-[#3f3d56]">
               <a
-                href="https://drive.google.com/file/d/1e5B0CPamP0gZlX0z4ybcZ0WPV1jo2z8h/view?usp=sharing"
+                href="https://drive.google.com/file/d/1M-WemcWwsdlyny8oqrBCG34g8SNVk37E/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
