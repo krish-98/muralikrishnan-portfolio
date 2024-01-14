@@ -10,6 +10,7 @@ import {
 import { ImHtmlFive } from 'react-icons/im'
 import { FaNodeJs, FaReact } from 'react-icons/fa'
 import { BiLogoGit } from 'react-icons/bi'
+import { DiMongodb } from 'react-icons/di'
 
 const skills = [
   {
@@ -69,12 +70,18 @@ const skills = [
   },
   {
     id: 10,
+    name: 'MongoDB',
+    icon: <DiMongodb className="w-10 h-14 text-[#00ed64]" />,
+    color: '#1b1f23',
+  },
+  {
+    id: 11,
     name: 'Git',
     icon: <BiLogoGit className="w-10 h-14 text-[#e84d31]" />,
     color: '#e84d31',
   },
   {
-    id: 11,
+    id: 12,
     name: 'Github',
     icon: <SiGithub className="w-10 h-14 text-[#1b1f23]" />,
     color: '#1b1f23',
