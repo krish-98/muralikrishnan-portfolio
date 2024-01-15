@@ -24,10 +24,9 @@ const Header = () => {
     <>
       {/* Mobile Navbar */}
       <nav
-        className={`lg:hidden sticky top-0 z-50 flex items-center justify-between p-4 text-primary ${
-          show ? 'bg-primary text-white' : 'bg-white'
-        }
-        } transition-all duration-300`}
+        className={`lg:hidden sticky top-0 z-50 flex items-center justify-between p-4 text-primary text-white transition-all duration-300 ${
+          show ? 'hidden' : 'bg-primary'
+        }`}
       >
         <a className="text-2xl" href="#top">
           MK
