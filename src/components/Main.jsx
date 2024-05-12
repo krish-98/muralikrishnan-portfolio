@@ -1,7 +1,7 @@
 import Hero from './Hero'
 import About from './About'
 import Skills from './Skills'
-import Portfolio from './Portfolio'
+import Project from './Project'
 import Contact from './Contact'
 
 const Main = () => {
@@ -14,7 +14,7 @@ const Main = () => {
 
         <Skills />
 
-        <Portfolio />
+        <Project />
 
         <Contact />
       </div>

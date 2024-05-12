@@ -1,11 +1,18 @@
 import { useEffect, useState } from 'react'
 import { HiMenu, HiX } from 'react-icons/hi'
+import { FiSun, FiMoon } from 'react-icons/fi'
+import { MdOutlineMenu } from 'react-icons/md'
 
 const Header = () => {
+  const [darkMode, setDarkMode] = useState(false)
   const [toggle, setToggle] = useState(false)
   const [show, setShow] = useState(false)
 
-  const toggleHandler = () => {
+  const handleDarkMode = () => {
+    setDarkMode(!darkMode)
+  }
+
+  const handleToggle = () => {
     setToggle(!toggle)
   }
 
@@ -15,6 +22,7 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', transitionNavbar)
+
     return () => {
       window.removeEventListener('scroll', transitionNavbar)
     }
@@ -24,80 +32,73 @@ const Header = () => {
     <>
       {/* Mobile Navbar */}
       <nav
-        className={`lg:hidden sticky top-0 z-50 flex items-center justify-between p-4 text-primary text-white transition-all duration-300 ${
-          show ? 'hidden' : 'bg-primary'
-        }`}
+        className={`lg:hidden sticky top-0 z-50 flex items-center justify-between p-5 text-white transition-all duration-300 bg-primary`}
       >
-        <a className="text-2xl" href="#top">
-          MK
-        </a>
+        <button onClick={handleDarkMode}>
+          {darkMode ? <FiSun size={22} /> : <FiMoon size={22} />}
+        </button>
 
-        {!toggle ? (
-          <HiMenu onClick={toggleHandler} className="w-8 h-8 cursor-pointer" />
-        ) : (
-          <div className="fixed top-0 left-0 w-screen h-screen bg-primary text-secondary flex flex-col justify-center">
-            <HiX
-              onClick={toggleHandler}
-              className="absolute top-4 right-4 w-8 h-8 cursor-pointer text-white"
-            />
+        <div>
+          <ul className="flex items-center gap-3 text-sm">
+            <li className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in">
+              <a href="#home" className="md:text-lg tracking-wide">
+                Home
+              </a>
+            </li>
 
-            <ul className="flex flex-col items-center justify-center gap-9 font-semibold uppercase">
-              <li
-                onClick={toggleHandler}
-                className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
-              >
-                <a href="#home" className="md:text-lg tracking-wide">
-                  Home
-                </a>
-              </li>
-              <li
-                onClick={toggleHandler}
-                className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
-              >
-                <a href="#about" className="md:text-lg tracking-wide">
-                  About
-                </a>
-              </li>
-              <li
-                onClick={toggleHandler}
-                className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
-              >
-                <a href="#skills" className="md:text-lg tracking-wide">
-                  Skills
-                </a>
-              </li>
-              <li
-                onClick={toggleHandler}
-                className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
-              >
-                <a href="#portfolio" className="md:text-lg tracking-wide">
-                  Portfolio
-                </a>
-              </li>
-              <li
-                onClick={toggleHandler}
-                className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
-              >
-                <a
-                  href="https://drive.google.com/file/d/1M-WemcWwsdlyny8oqrBCG34g8SNVk37E/view?usp=sharing"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="md:text-lg tracking-wide"
+            <li className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in">
+              <a href="#projects" className="md:text-lg tracking-wide">
+                Projects
+              </a>
+            </li>
+
+            <div>
+              <MdOutlineMenu
+                onClick={handleToggle}
+                size={25}
+                className="cursor-pointer"
+              />
+            </div>
+          </ul>
+
+          {toggle && (
+            <>
+              <div
+                onClick={() => setToggle(false)}
+                className="fixed inset-0 z-50"
+              />
+
+              <ul className="absolute top-[4.2rem] left-0 right-0 z-40 bg-white text-primary text-sm flex flex-col gap-2 p-4 mx-4 rounded-md shadow-lg">
+                <li
+                  onClick={handleToggle}
+                  className="border-b pb-2 hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
                 >
-                  Resume
-                </a>
-              </li>
-              <li
-                onClick={toggleHandler}
-                className="hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
-              >
-                <a href="#contact" className="md:text-lg tracking-wide">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        )}
+                  <a href="#about" className="md:text-lg tracking-wide">
+                    About
+                  </a>
+                </li>
+
+                <li
+                  onClick={handleToggle}
+                  className="border-b pb-2 hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
+                >
+                  <a href="#skills" className="md:text-lg tracking-wide">
+                    Skills
+                  </a>
+                </li>
+
+                <li
+                  onClick={handleToggle}
+                  className="border-b pb-2 hover:border-b-[2px] hover:border-b-gray-400 transition-all ease-in"
+                >
+                  <a href="#contact" className="md:text-lg tracking-wide">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </>
+          )}
+        </div>
       </nav>
 
       {/* laptop, Desktop Navbar */}
