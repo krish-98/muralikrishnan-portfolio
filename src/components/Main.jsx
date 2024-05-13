@@ -6,7 +6,7 @@ import Contact from './Contact'
 
 const Main = () => {
   return (
-    <main className="px-5 text-lightBlack">
+    <main className={`px-5 text-lightBlack dark:bg-zinc-900`}>
       <div className="max-w-6xl mx-auto">
         <Hero />
         <About />

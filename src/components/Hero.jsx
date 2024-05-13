@@ -11,19 +11,19 @@ const Hero = () => {
       className="h-[calc(100vh-64px)] flex items-center justify-center w-full md:py-24 lg:px-6 lg:h-[calc(100vh-74px)] xl:px-0"
     >
       <div className="flex flex-col items-center gap-7 w-full text-center lg:items-start lg:text-left">
-        <h1 className="font-bold text-5xl leading-tight tracking-wider md:text-[3.5rem]">
-          Bonjour, I'm{' '}
-          <span className="font-bold text-primary">Murali Krishnan</span>
+        <h1 className="font-bold text-5xl leading-tight tracking-wider md:text-[3.5rem] dark:text-white">
+          Bonjour, I&apos;m
+          <span className="font-bold text-primary"> Murali Krishnan</span>
         </h1>
 
-        <p className="font-medium text-textGray underline underline-offset-4   decoration-primary md:text-lg">
+        <p className="font-medium text-textGray underline underline-offset-4 decoration-primary md:text-lg dark:decoration-teal-200">
           Full Stack Developer
         </p>
 
-        <p className="text-sm leading-6 font-semibold tracking-wide md:w-[70%] lg:text-base lg:indent-1 lg:w-[93%]">
+        <p className="text-sm leading-6 font-semibold tracking-wide md:w-[70%] lg:text-base lg:indent-1 lg:w-[93%] dark:text-zinc-400">
           I build and{' '}
           <span className="relative">
-            <span className="line-through decoration-2 decoration-primary">
+            <span className="line-through decoration-2 decoration-primary dark:decoration-teal-200">
               break
             </span>
             <span className="absolute bottom-[.8rem] left-[-2px] lg:left-[-6px] lg:bottom-4 ">
