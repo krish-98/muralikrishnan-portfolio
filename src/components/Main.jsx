@@ -9,13 +9,9 @@ const Main = () => {
     <main className="px-5 text-lightBlack">
       <div className="max-w-6xl mx-auto">
         <Hero />
-
         <About />
-
-        <Skills />
-
         <Project />
-
+        <Skills />
         <Contact />
       </div>
     </main>
