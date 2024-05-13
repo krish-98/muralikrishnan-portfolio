@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { FiSun, FiMoon } from 'react-icons/fi'
 import { MdOutlineMenu } from 'react-icons/md'
 import { useDarkMode } from '../contexts/ThemeContext'
@@ -34,7 +34,9 @@ const Header = () => {
           'bg-gradient-to-br from-white via-purple-100 to-white dark:bg-gradient-r dark:from-zinc-900 dark:to-zinc-900'
         } dark:bg-zinc-900`}
       >
-        <h1 className="animate-pulse">MK</h1>
+        <a href="#top" className="cursor-pointer animate-pulse">
+          MK
+        </a>
 
         <div>
           <ul className="flex items-center gap-3 text-sm md:text-base md:gap-6">
@@ -130,27 +132,27 @@ const Header = () => {
           </a>
 
           <ul className="flex items-center gap-8">
-            <li className="cursor-pointer hover:bg-gradient-to-r hover:text-black dark:hover:text-teal-200">
+            <li className="cursor-pointer hover:text-black dark:hover:text-teal-200">
               <a href="#home">Home</a>
             </li>
 
-            <li className="cursor-pointer hover:bg-gradient-to-r hover:text-black dark:hover:text-teal-200">
+            <li className="cursor-pointer hover:text-black dark:hover:text-teal-200">
               <a href="#about">About</a>
             </li>
 
-            <li className="cursor-pointer hover:bg-gradient-to-r hover:text-black dark:hover:text-teal-200">
+            <li className="cursor-pointer hover:text-black dark:hover:text-teal-200">
               <a href="#projects">Projects</a>
             </li>
 
-            <li className="cursor-pointer hover:bg-gradient-to-r hover:text-black dark:hover:text-teal-200">
+            <li className="cursor-pointer hover:text-black dark:hover:text-teal-200">
               <a href="#skills">Skills</a>
             </li>
 
-            <li className="cursor-pointer hover:bg-gradient-to-r hover:text-black dark:hover:text-teal-200">
+            <li className="cursor-pointer hover:text-black dark:hover:text-teal-200">
               <a href="#contact">Contact</a>
             </li>
 
-            <li className="cursor-pointer hover:bg-gradient-to-r hover:text-black dark:hover:text-teal-200">
+            <li className="cursor-pointer hover:text-black dark:hover:text-teal-200">
               <a href="#">Resources</a>
             </li>
 

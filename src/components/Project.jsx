@@ -172,7 +172,7 @@ const Project = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="flex flex-col items-center gap-3 shadow-xl rounded-xl hover:scale-105 transition-all duration-500 ease-in-out md:max-w-[500px] mx-auto lg:pb-3 dark:border dark:text-white"
+              className="flex flex-col items-center gap-3 shadow-xl rounded-xl hover:scale-105 transition-all duration-500 ease-in-out md:max-w-[500px] mx-auto lg:pb-3 dark:border dark:border-zinc-700 dark:text-white"
             >
               {/* Project sceernshot */}
               <img

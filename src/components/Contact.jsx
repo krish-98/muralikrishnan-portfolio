@@ -1,9 +1,9 @@
-import React, { useRef, useState } from "react"
-import emailjs from "@emailjs/browser"
-import { RiMailSendLine } from "react-icons/ri"
+import React, { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser'
+import { RiMailSendLine } from 'react-icons/ri'
 
 const Contact = () => {
-  const [sendMsg, setSendMsg] = useState("")
+  const [sendMsg, setSendMsg] = useState('')
   const formRef = useRef()
 
   const handleForm = (e) => {
@@ -11,28 +11,28 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_iz1xi0h",
-        "template_fdqjlle",
+        'service_iz1xi0h',
+        'template_fdqjlle',
         formRef.current,
-        "ePt-fCck01QMroed-"
+        'ePt-fCck01QMroed-'
       )
       .then(
         (result) => {
-          setSendMsg("Message Sent")
+          setSendMsg('Message Sent')
           console.log(result.text)
-          setTimeout(() => setSendMsg(""), 3000)
+          setTimeout(() => setSendMsg(''), 3000)
         },
         (error) => {
           setSendMsg("Message didn't deliver")
           console.log(error.text)
-          setTimeout(() => setSendMsg(""), 3000)
+          setTimeout(() => setSendMsg(''), 3000)
         }
       )
   }
 
   return (
-    <section id="contact" className="flex flex-col items-center mt-28 mb-16">
-      <h2 className="text-3xl font-semibold tracking-wide uppercase my-4 lg:text-4xl">
+    <section id="contact" className="flex flex-col items-center mt-28 pb-16">
+      <h2 className="text-3xl font-semibold tracking-wide uppercase my-4 lg:text-4xl dark:text-white">
         Contact
       </h2>
 
