@@ -1,7 +1,7 @@
 import Dev from '../assets/dev.svg'
 import { BiLinkExternal } from 'react-icons/bi'
 import { AiOutlineMail } from 'react-icons/ai'
-import { FiTwitter } from 'react-icons/fi'
+import { FaXTwitter } from 'react-icons/fa6'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
 
 const Hero = () => {
@@ -53,7 +53,16 @@ const Hero = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <BsLinkedin className="w-6 h-5 lg:h-7 lg:w-8" />
+            <BsLinkedin className="w-6 h-5 lg:h-7 lg:w-8 dark:fill-white dark:hover:fill-primary" />
+          </a>
+
+          <a
+            className="hover:text-primary transition-all ease-in-out duration-300 "
+            href="https://x.com/muralikrishn_an"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaXTwitter className="w-6 h-5 lg:h-7 lg:w-8 dark:fill-white dark:hover:fill-primary" />
           </a>
 
           <a
@@ -62,16 +71,7 @@ const Hero = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <BsGithub className="w-6 h-5 lg:h-7 lg:w-8" />
-          </a>
-
-          <a
-            className="hover:text-primary transition-all ease-in-out duration-300 "
-            href="https://twitter.com/muralikrishn_an"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FiTwitter className="w-6 h-5 lg:h-7 lg:w-8" />
+            <BsGithub className="w-6 h-5 lg:h-7 lg:w-8 dark:fill-white dark:hover:fill-primary" />
           </a>
 
           <a
@@ -80,7 +80,7 @@ const Hero = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <AiOutlineMail className="w-6 h-5 lg:h-7 lg:w-8" />
+            <AiOutlineMail className="w-6 h-5 lg:h-7 lg:w-8 dark:fill-white dark:hover:fill-primary" />
           </a>
         </div>
       </div>

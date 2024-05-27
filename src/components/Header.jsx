@@ -9,21 +9,21 @@ const Header = () => {
 
   const { isDarkMode, toggleDarkMode } = useDarkMode()
 
-  const handleToggle = () => {
-    setToggle(!toggle)
-  }
-
-  const transitionNavbar = () => {
-    window.scrollY > 100 ? setShow(true) : setShow(false)
-  }
-
   useEffect(() => {
+    const transitionNavbar = () => {
+      window.scrollY > 100 ? setShow(true) : setShow(false)
+    }
+
     window.addEventListener('scroll', transitionNavbar)
 
     return () => {
       window.removeEventListener('scroll', transitionNavbar)
     }
   }, [])
+
+  const handleToggle = () => {
+    setToggle(!toggle)
+  }
 
   return (
     <>
@@ -61,7 +61,7 @@ const Header = () => {
             </div>
 
             {/* Dark mode button */}
-            <button onClick={() => toggleDarkMode()}>
+            <button onClick={toggleDarkMode}>
               {isDarkMode ? <FiSun size={22} /> : <FiMoon size={22} />}
             </button>
           </ul>
@@ -106,7 +106,12 @@ const Header = () => {
                   onClick={handleToggle}
                   className="transition-all hover:text-gray-400 dark:border-teal-200"
                 >
-                  <a href="#" className="md:text-base tracking-wide">
+                  <a
+                    href="https://www.notion.so/murali-krishnan/Web-Dev-36d30ca17c3b4c3a8fd660ec7e020025?pvs=4"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="md:text-base tracking-wide"
+                  >
                     Resources
                   </a>
                 </li>
@@ -153,11 +158,17 @@ const Header = () => {
             </li>
 
             <li className="cursor-pointer hover:text-black dark:hover:text-teal-200">
-              <a href="#">Resources</a>
+              <a
+                href="https://www.notion.so/murali-krishnan/Web-Dev-36d30ca17c3b4c3a8fd660ec7e020025?pvs=4"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Resources
+              </a>
             </li>
 
             {/* Dark mode button */}
-            <button onClick={() => toggleDarkMode()}>
+            <button onClick={toggleDarkMode}>
               {isDarkMode ? <FiSun size={22} /> : <FiMoon size={22} />}
             </button>
           </ul>

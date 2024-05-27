@@ -1,11 +1,15 @@
-import React, { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useEffect, useState } from 'react'
 
 const DarkModeContext = createContext()
 
 export const useDarkMode = () => useContext(DarkModeContext)
 
 export const ThemeContextProvider = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  const [isDarkMode, setIsDarkMode] = useState(true)
+
+  useEffect(() => {
+    document.body.classList.add('dark')
+  }, [])
 
   const toggleDarkMode = () => {
     setIsDarkMode((prevMode) => !prevMode)

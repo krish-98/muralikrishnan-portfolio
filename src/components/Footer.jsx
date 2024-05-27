@@ -1,8 +1,8 @@
 import React from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
-import { FiTwitter } from 'react-icons/fi'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import { GiHeartBeats } from 'react-icons/gi'
+import { FaXTwitter } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
@@ -24,11 +24,11 @@ const Footer = () => {
         </a>
         <a
           className="hover:text-primary transition-all ease-in-out duration-300 "
-          href="https://twitter.com/muralikrishn_an"
+          href="https://x.com/muralikrishn_an"
           target="_blank"
           rel="noreferrer"
         >
-          <FiTwitter className="w-6 h-5 lg:h-7 lg:w-8" />
+          <FaXTwitter className="w-6 h-5 lg:h-7 lg:w-8" />
         </a>
         <a
           className="hover:text-primary transition-all ease-in-out duration-300 "
