@@ -168,15 +168,15 @@ const Project = () => {
         </h2>
 
         {/* Projects */}
-        <div className="flex flex-wrap items-center gap-14 xl:gap-[4.5rem]">
+        <div className="flex flex-wrap items-center gap-14 xl:gap-16">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="flex flex-col items-center gap-3 shadow-xl rounded-xl hover:scale-105 transition-all duration-500 ease-in-out md:max-w-[500px] mx-auto lg:pb-3 dark:border dark:border-zinc-700 dark:text-white"
+              className="flex flex-col items-center gap-3 md:max-w-[400px] mx-auto lg:pb-3 shadow-xl rounded-xl hover:scale-105 transition-all duration-500 ease-in-out  dark:border dark:border-zinc-700 dark:text-white"
             >
               {/* Project sceernshot */}
               <img
-                className="rounded-t-lg md:h-64 md:object-cover w-full"
+                className="rounded-t-xl md:h-64 md:w-full object-cover"
                 src={project.img}
                 alt="project cover"
               />
@@ -192,7 +192,7 @@ const Project = () => {
                 </p>
 
                 {/* Tech stack */}
-                <div className="flex flex-wrap items-center justify-center gap-2 my-2">
+                <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-4 my-2">
                   {project?.stack?.map((item, index) => (
                     <span key={index}>{item}</span>
                   ))}

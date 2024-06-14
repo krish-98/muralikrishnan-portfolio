@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { RiMailSendLine } from 'react-icons/ri'
 
@@ -23,7 +23,7 @@ const Contact = () => {
           setTimeout(() => setSendMsg(''), 3000)
         },
         (error) => {
-          setSendMsg("Message didn't deliver")
+          setSendMsg("Message didn't delivery")
           console.log(error.text)
           setTimeout(() => setSendMsg(''), 3000)
         }

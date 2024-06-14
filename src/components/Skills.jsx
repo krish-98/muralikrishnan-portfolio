@@ -101,7 +101,7 @@ const Skills = () => {
           {skills.map((skill) => (
             <div
               key={skill.id}
-              className={`w-36 h-36 rounded-xl shadow-lg flex flex-col items-center justify-center gap-1 hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300 dark:bg-white dark:shadow-primary dark:shadow-md`}
+              className={`w-36 h-36 rounded-xl shadow-lg flex flex-col items-center justify-center gap-1 hover:scale-110  transition-all ease-in-out duration-300 hover:shadow-primary dark:bg-white dark:shadow-primary dark:shadow-md`}
             >
               {skill.icon}
               <h3 className="tracking-wide">{skill.name}</h3>
