@@ -21,7 +21,7 @@ const projects = [
     img: SoulHeat,
     name: 'Soul Heat',
     description:
-      "A fully-functional food ordering app built with SWIGGY's real-world API along with Stripe payment gateway.",
+      "A fully functional food ordering app integrated with SWIGGY's real-world API and the Stripe payment gateway.",
     sourceLink: 'https://github.com/krish-98/soul-heat',
     liveLink: 'https://soul-heat.onrender.com',
     stack: [
@@ -64,7 +64,7 @@ const projects = [
     img: UrbanProperty,
     name: 'Urban Property',
     description:
-      'A MERN stack Real-estate platform showcasing properties for rent, including apartments, houses, and villas',
+      'A modern real estate platform that showcases properties for rent and sale, including apartments, houses, and villas.',
     sourceLink: 'https://github.com/krish-98/urban-property',
     liveLink: 'https://urban-property.onrender.com',
     stack: [
@@ -103,7 +103,7 @@ const projects = [
     img: Musik,
     name: 'Musik',
     description:
-      'A modern-day music streaming web app built using Shazamcore API.',
+      'A modern music streaming web app that leverages the Shazamcore API to provide users with a rich and dynamic music experience.',
     sourceLink: 'https://github.com/krish-98/Musik',
     liveLink: 'https://my-musik.netlify.app/',
     stack: [
@@ -130,7 +130,7 @@ const projects = [
     img: Audiophile,
     name: 'Audiophile',
     description:
-      'An e-commerce app for musical instruments with a clean user-friendly UI.',
+      'An e-commerce platform designed for musical instrument enthusiasts.',
     sourceLink: 'https://github.com/krish-98/audiophile',
     liveLink: 'https://audiophile-web.vercel.app/',
     stack: [
