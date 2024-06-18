@@ -3,8 +3,19 @@ import { BiLinkExternal } from 'react-icons/bi'
 import { AiOutlineMail } from 'react-icons/ai'
 import { FaXTwitter } from 'react-icons/fa6'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
+import { useState } from 'react'
 
 const Hero = () => {
+  const [role, setRole] = useState('Front-End Developer')
+
+  const handleMouseEnter = () => {
+    setRole('Full Stack Developer')
+  }
+
+  const handleMouseLeave = () => {
+    setRole('Front-End Developer')
+  }
+
   return (
     <section
       id="home"
@@ -16,8 +27,12 @@ const Hero = () => {
           <span className="font-bold text-primary"> Murali Krishnan</span>
         </h1>
 
-        <p className="font-medium text-textGray underline underline-offset-4 decoration-primary md:text-lg dark:decoration-teal-200">
-          Full Stack Developer
+        <p
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          className="font-medium text-textGray underline underline-offset-4 decoration-primary md:text-lg dark:decoration-teal-200  transition-all duration-500 ease-in-out"
+        >
+          {role}
         </p>
 
         <p className="text-sm leading-6 font-semibold tracking-wide md:w-[70%] lg:text-base lg:indent-1 lg:w-[93%] dark:text-zinc-400">
@@ -30,13 +45,13 @@ const Hero = () => {
               debug
             </span>
           </span>{' '}
-          web applications, and turn boring HTML DOM pages into fully functional
+          web applications, and turn boring HTML pages into fully functional
           apps using modern-day JavaScript 🖤 technologies and a pinch of my
           brain.
         </p>
 
         <a
-          href="https://drive.google.com/file/d/1M-WemcWwsdlyny8oqrBCG34g8SNVk37E/view?usp=sharing"
+          href="https://drive.google.com/file/d/1TVajzNTNuNFU4nXum-FAOmbKedQYofLK/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
           className="bg-primary text-white px-6 py-4 tracking-wide rounded-xl lg:mt-6 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500 hover:shadow-lg hover:shadow-primary"

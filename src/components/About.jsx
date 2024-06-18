@@ -22,19 +22,19 @@ const About = () => {
           <div className="flex flex-col items-center self-center lg:items-start">
             <p className="text-sm text-center tracking-wide leading-6 font-semibold mb-6 lg:text-base lg:leading-7 lg:text-left lg:indent-1 dark:text-zinc-400">
               Hello World!{' '}
-              <span className="text-primary">I&apos;m Murali Krishnan</span>. I
-              belong to{' '}
+              <span className="text-primary">I&apos;m Murali Krishnan</span>.
+              I&apos;m from{' '}
               <a
-                href="https://goo.gl/maps/yZVDbc6rWJFkypMEA"
+                href="https://maps.app.goo.gl/Q85heuuiHVHv5Rgf9"
                 target="_blank"
                 rel="noreferrer"
-                className="text-primary"
+                className="text-primary hover:underline"
               >
-                Madurai, India
+                India
                 <IoLocationSharp size={25} className="inline align-top" />
               </a>
-              . I have a Bachelor's Degree in Computer Science & Engg, yet I
-              learned everything on the Internet and still learning.
+              . I have a Bachelor&apos;s Degree in Computer Science & Engg, yet
+              I learned everything on the Internet and still learning.
             </p>
 
             <a
