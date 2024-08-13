@@ -22,12 +22,13 @@ html {
 /* Track */
 ::-webkit-scrollbar-track {
   /* box-shadow: inset 0 0 5px #87879e; */
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 /* Dark mode Track */
 .dark::-webkit-scrollbar-track {
   background-color: #18181b; /* Example dark mode color */
+  /* border-radius: 10px; */
 }
 
 /* Handle */
