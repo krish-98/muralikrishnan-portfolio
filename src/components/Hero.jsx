@@ -45,9 +45,9 @@ const Hero = () => {
               debug
             </span>
           </span>{' '}
-          web applications, and turn boring HTML pages into fully functional
-          apps using modern-day JavaScript 🖤 technologies and a pinch of my
-          brain.
+          websites and web apps, transforming blank HTML pages into fully
+          functional sites using modern JavaScript 🖤 technologies and a pinch
+          of my brain.
         </p>
 
         <a
