@@ -4,7 +4,7 @@ import Skills from './Skills'
 import Project from './Project'
 import Contact from './Contact'
 
-const Main = () => {
+const MainContent = () => {
   return (
     <main className={`px-5 text-lightBlack dark:bg-zinc-900`}>
       <div className="max-w-6xl mx-auto">
@@ -18,4 +18,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default MainContent
