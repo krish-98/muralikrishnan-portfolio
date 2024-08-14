@@ -30,7 +30,7 @@ const Hero = () => {
         <p
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          className="font-medium text-textGray underline underline-offset-4 decoration-primary md:text-lg dark:decoration-teal-200  transition-all duration-500 ease-in-out"
+          className="font-medium text-textGray underline underline-offset-4 decoration-primary md:text-lg dark:decoration-teal-200 transition duration-500"
         >
           {role}
         </p>
