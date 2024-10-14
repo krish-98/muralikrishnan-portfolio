@@ -47,7 +47,7 @@ const projects = [
       />,
       <SiExpress
         key="expressjs"
-        className="w-12 h-8 text-[#1b1f23] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+        className="w-12 h-8 text-[#1b1f23] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300 dark:text-white"
       />,
       <DiMongodb
         key="mongodb"
@@ -90,7 +90,7 @@ const projects = [
       />,
       <SiExpress
         key="expressjs"
-        className="w-12 h-8 text-black hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+        className="w-12 h-8 text-black hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300 dark:text-white"
       />,
       <DiMongodb
         key="mongodb"

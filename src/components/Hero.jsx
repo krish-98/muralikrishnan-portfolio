@@ -6,15 +6,16 @@ import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import { useState } from 'react'
 
 const Hero = () => {
-  const [role, setRole] = useState('Front-End Developer')
+  const role = 'Full Stack Developer'
+  // const [role, setRole] = useState('Front-End Developer')
 
-  const handleMouseEnter = () => {
-    setRole('Full Stack Developer')
-  }
+  // const handleMouseEnter = () => {
+  //   setRole('Full Stack Developer')
+  // }
 
-  const handleMouseLeave = () => {
-    setRole('Front-End Developer')
-  }
+  // const handleMouseLeave = () => {
+  //   setRole('Front-End Developer')
+  // }
 
   return (
     <section
@@ -28,8 +29,8 @@ const Hero = () => {
         </h1>
 
         <p
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+          // onMouseEnter={handleMouseEnter}
+          // onMouseLeave={handleMouseLeave}
           className="font-medium text-textGray underline underline-offset-4 decoration-primary md:text-lg dark:decoration-teal-200 transition duration-500"
         >
           {role}
@@ -51,7 +52,8 @@ const Hero = () => {
         </p>
 
         <a
-          href="https://drive.google.com/file/d/1TVajzNTNuNFU4nXum-FAOmbKedQYofLK/view?usp=sharing"
+          // href="https://drive.google.com/file/d/1TVajzNTNuNFU4nXum-FAOmbKedQYofLK/view?usp=sharing"
+          href="https://drive.google.com/file/d/1OewbvcLi7G5EOiSjLR5kL2GuaUQzkYHG/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
           className="bg-primary text-white px-6 py-4 tracking-wide rounded-xl lg:mt-6 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500 hover:shadow-lg hover:shadow-primary"
