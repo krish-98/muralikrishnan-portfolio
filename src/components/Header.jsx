@@ -62,7 +62,11 @@ const Header = () => {
 
             {/* Dark mode button */}
             <button onClick={toggleDarkMode}>
-              {isDarkMode ? <FiSun size={22} /> : <FiMoon size={22} />}
+              {isDarkMode === 'dark' ? (
+                <FiSun size={22} />
+              ) : (
+                <FiMoon size={22} />
+              )}
             </button>
           </ul>
 
@@ -169,7 +173,11 @@ const Header = () => {
 
             {/* Dark mode button */}
             <button onClick={toggleDarkMode}>
-              {isDarkMode ? <FiSun size={22} /> : <FiMoon size={22} />}
+              {isDarkMode === 'dark' ? (
+                <FiSun size={22} />
+              ) : (
+                <FiMoon size={22} />
+              )}
             </button>
           </ul>
         </div>
