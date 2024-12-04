@@ -6,6 +6,7 @@ import {
   SiCss3,
   SiGithub,
   SiExpress,
+  SiTypescript,
 } from 'react-icons/si'
 import { ImHtmlFive } from 'react-icons/im'
 import { FaNodeJs, FaReact } from 'react-icons/fa'
@@ -39,6 +40,13 @@ const skills = [
     color: '#f7e018',
   },
   {
+    id: 4,
+    name: 'TypeScript',
+    icon: <SiTypescript className="w-10 h-14 text-[#3178c6]" />,
+    color: '#3178c6',
+  },
+
+  {
     id: 5,
     name: 'React',
     icon: <FaReact className="w-10 h-14 text-[#61dbfb]" />,
@@ -67,12 +75,13 @@ const skills = [
     name: 'ExpressJS',
     icon: <SiExpress className="w-10 h-14 text-[#1b1f23]" />,
     color: '#1b1f23',
+    darkColor: '#ffffff',
   },
   {
     id: 10,
     name: 'MongoDB',
     icon: <DiMongodb className="w-10 h-14 text-[#00ed64]" />,
-    color: '#1b1f23',
+    color: '#00ed64',
   },
   {
     id: 11,
@@ -82,9 +91,10 @@ const skills = [
   },
   {
     id: 12,
-    name: 'Github',
+    name: 'GitHub',
     icon: <SiGithub className="w-10 h-14 text-[#1b1f23]" />,
     color: '#1b1f23',
+    darkColor: '#ffffff',
   },
 ]
 
@@ -101,7 +111,14 @@ const Skills = () => {
           {skills.map((skill) => (
             <div
               key={skill.id}
-              className={`w-36 h-36 rounded-xl shadow-lg flex flex-col items-center justify-center gap-1 hover:scale-110  transition-all ease-in-out duration-300 hover:shadow-primary dark:bg-white dark:shadow-primary dark:shadow-md`}
+              style={{
+                '--shadow-color': skill.color,
+                '--dark-shadow-color':
+                  skill.name === 'ExpressJS' || skill.name === 'GitHub'
+                    ? skill.darkColor
+                    : skill.color,
+              }}
+              className={`w-36 h-36 flex flex-col items-center justify-center gap-1 rounded-xl shadow-lg hover:scale-110 hover:shadow-[var(--shadow-color)] dark:bg-white dark:shadow-md dark:shadow-primary dark:hover:shadow-[var(--dark-shadow-color)] transition-all ease-in-out duration-300`}
             >
               {skill.icon}
               <h3 className="tracking-wide">{skill.name}</h3>

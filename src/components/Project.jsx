@@ -8,54 +8,69 @@ import {
   SiReactrouter,
   SiRedux,
   SiNodedotjs,
-  SiGithub,
   SiExpress,
+  SiTypescript,
+  SiJavascript,
+  SiGithub,
 } from 'react-icons/si'
 import { GrStripe } from 'react-icons/gr'
-import { BiLinkExternal } from 'react-icons/bi'
 import { FaReact } from 'react-icons/fa'
 import { DiMongodb } from 'react-icons/di'
+import { BiLinkExternal } from 'react-icons/bi'
 
 const projects = [
   {
     img: SoulHeat,
     name: 'Soul Heat',
     description:
-      "A fully functional food ordering app integrated with SWIGGY's real-world API and the Stripe payment gateway.",
+      'A feature-rich food ordering application built using the MERN stack with seamless payment integration via Stripe.',
     sourceLink: 'https://github.com/krish-98/soul-heat',
-    liveLink: 'https://soul-heat.onrender.com',
+    liveLink: 'https://soulheat.vercel.app',
     stack: [
+      <SiTypescript
+        key="typescript"
+        title="typescript"
+        className="w-12 h-8 text-[#3178c6] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+      />,
       <FaReact
         key="react"
-        className="w-12 h-8 text-[#61dbfb] flex scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+        title="react"
+        className="w-12 h-8 text-[#61dbfb] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
       />,
       <SiTailwindcss
         key="tailwindcss"
-        className="w-12 h-8 text-[#38bdf8] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+        title="tailwindcss"
+        className="w-12 h-8 text-[#38bdf8] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
       />,
       <SiRedux
         key="redux"
-        className="w-12 h-8 text-[#764abc] flex scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
-      />,
-      <SiFirebase
-        key="firebase"
-        className="w-12 h-8 text-[#ffcb2e] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+        title="redux"
+        className="w-12 h-8 text-[#764abc] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
       />,
       <SiNodedotjs
         key="nodedotjs"
-        className="w-12 h-8 text-[#43853d] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+        title="nodejs"
+        className="w-12 h-8 text-[#43853d] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
       />,
       <SiExpress
         key="expressjs"
-        className="w-12 h-8 text-[#1b1f23] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300 dark:text-white"
+        title="expressjs"
+        className="w-12 h-8 text-[#1b1f23] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300 dark:text-white"
       />,
       <DiMongodb
         key="mongodb"
-        className="w-12 h-8 text-[#00ed64] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+        title="mongodb"
+        className="w-12 h-8 text-[#00ed64] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
       />,
       <GrStripe
         key="stripe"
-        className="w-12 h-8 text-[#635bff] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+        title="stripe"
+        className="w-12 h-8 text-[#635bff] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+      />,
+      <SiFirebase
+        key="firebase"
+        title="firebase"
+        className="w-12 h-8 text-[#ffcb2e] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
       />,
     ],
   },
@@ -64,64 +79,49 @@ const projects = [
     img: UrbanProperty,
     name: 'Urban Property',
     description:
-      'A modern real estate platform that showcases properties for rent and sale, including apartments, houses, and villas.',
+      'A MERN stack real estate platform enabling users to explore properties for rent and sale, including apartments, houses, and villas.',
     sourceLink: 'https://github.com/krish-98/urban-property',
-    liveLink: 'https://urban-property.onrender.com',
+    liveLink: 'https://urbanproperty.vercel.app',
     stack: [
+      <SiTypescript
+        key="typescript"
+        title="typescript"
+        className="w-12 h-8 text-[#3178c6] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+      />,
       <FaReact
         key="react"
-        className="w-12 h-8 text-[#61dbfb] flex scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+        title="react"
+        className="w-12 h-8 text-[#61dbfb] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
       />,
       <SiTailwindcss
         key="tailwindcss"
-        className="w-12 h-8 text-[#38bdf8] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
-      />,
-      <SiFirebase
-        key="firebase"
-        className="w-12 h-8 text-[#ffcb2e] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+        title="tailwindcss"
+        className="w-12 h-8 text-[#38bdf8] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
       />,
       <SiRedux
         key="redux"
-        className="w-12 h-8 text-[#764abc] flex scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+        title="redux"
+        className="w-12 h-8 text-[#764abc] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
       />,
       <SiNodedotjs
-        key="nodedotjs"
-        className="w-12 h-8 text-[#43853d] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+        key="nodejs"
+        title="nodejs"
+        className="w-12 h-8 text-[#43853d] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
       />,
       <SiExpress
         key="expressjs"
-        className="w-12 h-8 text-black hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300 dark:text-white"
+        title="expressjs"
+        className="w-12 h-8 text-black flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300 dark:text-white"
       />,
       <DiMongodb
         key="mongodb"
-        className="w-12 h-8 text-[#00ed64] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+        title="mongodb"
+        className="w-12 h-8 text-[#00ed64] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
       />,
-    ],
-  },
-
-  {
-    img: Musik,
-    name: 'Musik',
-    description:
-      'A modern music streaming web app that leverages the Shazamcore API to provide users with a rich and dynamic music experience.',
-    sourceLink: 'https://github.com/krish-98/Musik',
-    liveLink: 'https://my-musik.netlify.app/',
-    stack: [
-      <FaReact
-        key="react"
-        className="w-12 h-8 text-[#61dbfb] flex scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
-      />,
-      <SiTailwindcss
-        key="tailwindcss"
-        className="w-12 h-8 text-[#38bdf8] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
-      />,
-      <SiReactrouter
-        key="reactrouter"
-        className="w-12 h-8 text-[#f44250] flex scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
-      />,
-      <SiRedux
-        key="redux"
-        className="w-12 h-8 text-[#764abc] flex scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+      <SiFirebase
+        key="firebase"
+        title="firebase"
+        className="w-12 h-8 text-[#ffcb2e] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
       />,
     ],
   },
@@ -130,29 +130,70 @@ const projects = [
     img: Audiophile,
     name: 'Audiophile',
     description:
-      'An e-commerce platform designed for musical instrument enthusiasts.',
+      'An e-commerce application for music enthusiasts with a clean and user-friendly interface.',
     sourceLink: 'https://github.com/krish-98/audiophile',
     liveLink: 'https://audiophile-web.vercel.app/',
     stack: [
+      <SiJavascript
+        key="javasript"
+        title="javasript"
+        className="w-12 h-8 text-[#f7e018] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+      />,
       <FaReact
         key="react"
-        className="w-12 h-8 text-[#61dbfb] flex scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+        title="react"
+        className="w-12 h-8 text-[#61dbfb] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
       />,
       <SiTailwindcss
         key="tailwindcss"
-        className="w-12 h-8 text-[#38bdf8] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+        title="tailwindcss"
+        className="w-12 h-8 text-[#38bdf8] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
       />,
       <SiReactrouter
         key="reactrouter"
-        className="w-12 h-8 text-[#f44250] flex scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+        title="reactrouter"
+        className="w-12 h-8 text-[#f44250] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
       />,
       <SiRedux
         key="redux"
-        className="w-12 h-8 text-[#764abc] flex scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+        title="redux"
+        className="w-12 h-8 text-[#764abc] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
       />,
-      <SiFirebase
-        key="firebase"
-        className="w-12 h-8 text-[#ffcb2e] hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+    ],
+  },
+
+  {
+    img: Musik,
+    name: 'Musik',
+    description:
+      'A modern music streaming web app powered by the Shazamcore API.',
+    sourceLink: 'https://github.com/krish-98/Musik',
+    liveLink: 'https://my-musik.netlify.app/',
+    stack: [
+      <SiJavascript
+        key="javasript"
+        title="javasript"
+        className="w-12 h-8 text-[#f7e018] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+      />,
+      <FaReact
+        key="react"
+        title="react"
+        className="w-12 h-8 text-[#61dbfb] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+      />,
+      <SiTailwindcss
+        key="tailwindcss"
+        title="tailwindcss"
+        className="w-12 h-8 text-[#38bdf8] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+      />,
+      <SiReactrouter
+        key="reactrouter"
+        title="reactrouter"
+        className="w-12 h-8 text-[#f44250] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
+      />,
+      <SiRedux
+        key="redux"
+        title="redux"
+        className="w-12 h-8 text-[#764abc] flex hover:scale-110 hover:shadow-primary transition-all ease-in-out duration-300"
       />,
     ],
   },
@@ -194,7 +235,9 @@ const Project = () => {
                 {/* Tech stack */}
                 <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-4 my-2">
                   {project?.stack?.map((item, index) => (
-                    <span key={index}>{item}</span>
+                    <span key={index} title={item.title}>
+                      {item}
+                    </span>
                   ))}
                 </div>
 

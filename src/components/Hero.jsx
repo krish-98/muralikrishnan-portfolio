@@ -3,7 +3,6 @@ import { BiLinkExternal } from 'react-icons/bi'
 import { AiOutlineMail } from 'react-icons/ai'
 import { FaXTwitter } from 'react-icons/fa6'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
-import { useState } from 'react'
 
 const Hero = () => {
   const role = 'Full Stack Developer'
@@ -52,8 +51,7 @@ const Hero = () => {
         </p>
 
         <a
-          // href="https://drive.google.com/file/d/1TVajzNTNuNFU4nXum-FAOmbKedQYofLK/view?usp=sharing"
-          href="https://drive.google.com/file/d/1OewbvcLi7G5EOiSjLR5kL2GuaUQzkYHG/view?usp=sharing"
+          href="https://drive.google.com/file/d/1OIqmI1ARcOaLI1MaYEe2WQ2qWScBvvM5/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
           className="bg-primary text-white px-6 py-4 tracking-wide rounded-xl lg:mt-6 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500 hover:shadow-lg hover:shadow-primary"
