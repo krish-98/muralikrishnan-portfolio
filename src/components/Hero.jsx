@@ -5,17 +5,6 @@ import { FaXTwitter } from 'react-icons/fa6'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
 
 const Hero = () => {
-  const role = 'Full Stack Developer'
-  // const [role, setRole] = useState('Front-End Developer')
-
-  // const handleMouseEnter = () => {
-  //   setRole('Full Stack Developer')
-  // }
-
-  // const handleMouseLeave = () => {
-  //   setRole('Front-End Developer')
-  // }
-
   return (
     <section
       id="home"
@@ -27,15 +16,7 @@ const Hero = () => {
           <span className="font-bold text-primary"> Murali Krishnan</span>
         </h1>
 
-        <p
-          // onMouseEnter={handleMouseEnter}
-          // onMouseLeave={handleMouseLeave}
-          className="font-medium text-textGray underline underline-offset-4 decoration-primary md:text-lg dark:decoration-teal-200 transition duration-500"
-        >
-          {role}
-        </p>
-
-        <p className="text-sm leading-6 font-semibold tracking-wide md:w-[70%] lg:text-base lg:indent-1 lg:w-[93%] dark:text-zinc-400">
+        <p className="text-sm max-sm:text-center leading-6 font-medium lg:tracking-wide md:w-[70%] lg:text-base lg:w-[93%] lg:leading-7 lg:text-balance dark:text-zinc-400">
           I build and{' '}
           <span className="relative">
             <span className="line-through decoration-2 decoration-primary dark:decoration-teal-200">
@@ -45,8 +26,8 @@ const Hero = () => {
               debug
             </span>
           </span>{' '}
-          websites and web apps, transforming static HTML pages into fully
-          functional applications using modern JavaScript 🖤 technologies—plus a
+          websites and web apps—transforming static HTML pages into fully
+          functional applications using modern JavaScript technologies 🖤—plus a
           pinch of my brain.
         </p>
 
@@ -54,7 +35,7 @@ const Hero = () => {
           href="https://drive.google.com/file/d/1OIqmI1ARcOaLI1MaYEe2WQ2qWScBvvM5/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
-          className="bg-primary text-white px-6 py-4 tracking-wide rounded-xl lg:mt-6 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500 hover:shadow-lg hover:shadow-primary"
+          className="bg-primary text-white px-6 py-4 tracking-wide rounded-xl lg:mt-2 drop-shadow-2xl hover:text-lightBlack hover:bg-white hover:ring-2 hover:ring-primary transition ease-in-out duration-500 hover:shadow-lg hover:shadow-primary"
         >
           View Resume
           <BiLinkExternal className="inline-block ml-1 h-5 w-6" />

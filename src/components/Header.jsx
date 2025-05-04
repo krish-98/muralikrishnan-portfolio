@@ -29,7 +29,7 @@ const Header = () => {
     <>
       {/* Mobile Navbar */}
       <nav
-        className={`lg:hidden sticky top-0 z-50 flex items-center justify-between p-5 transition-all duration-300 text-primary bg-white ${
+        className={`lg:hidden sticky top-0 z-50 flex items-center justify-between p-5 transition-colors duration-500 text-primary bg-white ${
           show &&
           'bg-gradient-to-br from-white via-purple-100 to-white dark:bg-gradient-r dark:from-zinc-900 dark:to-zinc-900'
         } dark:bg-zinc-900`}
@@ -125,9 +125,9 @@ const Header = () => {
         </div>
       </nav>
 
-      {/* laptop, Desktop Navbar */}
+      {/* Laptop, Desktop Navbar */}
       <nav
-        className={`hidden lg:block sticky top-0 z-50 text-primary py-5 px-6 transition-all duration-300 ${
+        className={`hidden lg:block sticky top-0 z-50 text-primary py-5 px-6 transition-colors duration-500 ${
           show &&
           'bg-gradient-to-br from-white via-purple-100 to-white dark:bg-gradient-r dark:from-zinc-900 dark:to-zinc-900'
         } dark:bg-zinc-900`}
@@ -144,23 +144,18 @@ const Header = () => {
             <li className="cursor-pointer hover:text-black dark:hover:text-teal-200">
               <a href="#home">Home</a>
             </li>
-
             <li className="cursor-pointer hover:text-black dark:hover:text-teal-200">
               <a href="#about">About</a>
             </li>
-
-            <li className="cursor-pointer hover:text-black dark:hover:text-teal-200">
-              <a href="#projects">Projects</a>
-            </li>
-
             <li className="cursor-pointer hover:text-black dark:hover:text-teal-200">
               <a href="#skills">Skills</a>
             </li>
-
+            <li className="cursor-pointer hover:text-black dark:hover:text-teal-200">
+              <a href="#projects">Projects</a>
+            </li>
             <li className="cursor-pointer hover:text-black dark:hover:text-teal-200">
               <a href="#contact">Contact</a>
             </li>
-
             <li className="cursor-pointer hover:text-black dark:hover:text-teal-200">
               <a
                 href="https://www.notion.so/murali-krishnan/Web-Dev-36d30ca17c3b4c3a8fd660ec7e020025?pvs=4"

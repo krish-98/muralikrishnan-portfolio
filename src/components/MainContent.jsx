@@ -10,8 +10,8 @@ const MainContent = () => {
       <div className="max-w-6xl mx-auto">
         <Hero />
         <About />
-        <Project />
         <Skills />
+        <Project />
         <Contact />
       </div>
     </main>
